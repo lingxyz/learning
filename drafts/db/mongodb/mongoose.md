@@ -1,1 +1,0 @@
-# [mongoose](http://mongoosejs.com)

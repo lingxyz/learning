@@ -1,5 +1,15 @@
-# 个人博客
+# <div align="center">个人博客</div>
 
-> 既然抓不住时光，总要在时光中留下点什么。
-> 将个人知识经验总结、职场经验、人生感悟记录于此，
-[欢迎一起探讨各自在工作和生活中遇到的问题](https://github.com/lingzZ/Blog/issues/1)
+个人知识经验总结、职场经验、人生感悟记录与分享
+
+更多：
+[`Blog`](https://zhangling.co/)
+[`掘金`](https://juejin.im/user/59e6e9acf265da43111f4c21/collections?type=created)
+[`简书`](https://www.jianshu.com/u/539a1124c845)
+[`微博`](https://www.weibo.com/5565541266/profile)
+[`问题探讨`](https://github.com/lingzZ/Blog/issues/1)
+
+## 目录
+- `团队管理` [任务执行标准流程](任务执行标准流程.md) `2019.07.15`
+
+> 说明：本项目采用[Gridea](https://gridea.dev/)构建
