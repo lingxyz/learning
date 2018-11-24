@@ -1,0 +1,1 @@
+- [opn](https://www.npmjs.com/package/opn)：在浏览器打开文件/url
