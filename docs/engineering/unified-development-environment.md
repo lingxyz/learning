@@ -1,3 +1,5 @@
+# 用Docker统一本地开发环境
+
 前端开发从原始的 HTML + CSS + JavaScript 开发，发展到如今的以数据驱动的 Vue、React、Angular 框架，以及 ES6+，TypeScript、Pug、Stylus 等技术的使用，大大方便了开发者。
 
 但源码必须经过各种编译、打包工具产出浏览器可运行的代码，这给前端开发（尤其是非科班出身）带来了难度。经常遇到的现象是，当我们接手一个新项目，满怀期待执行
@@ -11,11 +13,11 @@ npm i
 
 为了统一前端的本地开发环境，告别npm因在Windows、Lilux、macOS系统的差异而导致的编译问题，我们引入 Docker 小助手。
 
-### Step1，Docker 安装运行
+## Step1，Docker 安装运行
 
 这个...自己google一下吧，相信难不倒大家滴！
 
-### Step2，配置文件创建
+## Step2，配置文件创建
 
 1. 从github/gitlab克隆已有项目，本地新建分支
 
@@ -30,7 +32,7 @@ git checkout -b feature-docker
 vue create hello-world
 ```
 
-2. Docker 配置文件的创建
+1. Docker 配置文件的创建
 
 在项目根目录`/hello-world`我们创建两个配置文件，`.dockerignore`和`Dockerfile`。
 
@@ -58,7 +60,7 @@ RUN npm i --registry=http://10.32.1.103:4873/
 EXPOSE 8080
 ```
 
-### Step3，构建 image
+## Step3，构建 image
 
 一行代码搞定`image`构建，so easy!
 
@@ -69,7 +71,7 @@ docker image build -t hello-world .
 
 构建完成后，执行`docker image ls`查看。
 
-### Step4，生成容器
+## Step4，生成容器
 
 执行`docker container run`从`image`文件生成容器：
 
@@ -86,7 +88,7 @@ docker container run -p 8080:8080 -v $(pwd):/app -it c4i-web /bin/bash
 /bin/bash 容器启动以后，启动 Bash，保证用户可以使用 Shell
 ```
 
-### Step5 运行项目
+## Step5 运行项目
 
 经过以上一番折腾，达到了两个目的：
 
@@ -106,14 +108,14 @@ vi config/index.js
 
 本机浏览器打开`http://localhost:8080/`，完美！本机改动一下文件，`hot reload`立马呈现！
 
-### Step 6 命令封装
+## Step 6 命令封装
 
 至此，我们距离成功只差一行代码了！为了方便其它开发人员使用，我们将以上命令封装在 `package.json` 的 `script` 属性中。
 
-```json
+```javascript
 "scripts": {
     "docker": "docker image build -t hello-world .;docker container run -p 8080:8080 -v $(pwd):/app -it hello-world /bin/bash",
-		...
+        ...
   },
 ```
 
@@ -124,3 +126,4 @@ npm run docker
 ```
 
 即可一键构建 `image` 和 `container`。
+
