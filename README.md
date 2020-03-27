@@ -12,5 +12,5 @@
 * [从需求承接到代码交付程序员都经历了什么？](https://github.com/zhangling91/Blog/issues/2)
 * [用Docker统一本地开发环境](https://github.com/zhangling91/Blog/issues/1)
 
-_[_@掘金_](https://juejin.im/user/59e6e9acf265da43111f4c21/collections?type=created)_同步更新。_
+_[@掘金](https://juejin.im/user/59e6e9acf265da43111f4c21/collections?type=created)同步更新。_
 

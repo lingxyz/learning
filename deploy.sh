@@ -7,18 +7,31 @@ set -e
 if [ -d dist ]; then
   rm -rf dist
 fi
-mkdir dist
-cp -r assets dist/assets
+
+# 解决强制提交gitbook不更新的问题
+git clone -b gh-pages git@github.com:zhangling91/blog.git dist
+cp -r assets dist
 cp -r docs/* dist
+cp -r README.md dist
 
-# 进入生成的文件夹
 cd dist
-
-git init
 git add -A
 git commit -m 'deploy'
+git push origin gh-pages:gh-pages
+
+# mkdir dist
+# cp -r assets dist
+# cp -r docs/* dist
+# cp -r README.md dist
+
+# 进入生成的文件夹
+# cd dist
+
+# git init
+# git add -A
+# git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:zhangling91/blog.git master:gh-pages
+# git push -f git@github.com:zhangling91/blog.git master:gh-pages
 
 cd -
