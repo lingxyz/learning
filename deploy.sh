@@ -9,7 +9,7 @@ if [ -d dist ]; then
 fi
 
 # 解决强制提交gitbook不更新的问题
-git clone -b gh-pages git@github.com:zhangling91/blog.git dist
+git clone -b gh-pages git@github.com:zhanglingx/blog.git dist
 cp -r assets dist
 cp -r docs/* dist
 cp -r README.md dist
@@ -32,6 +32,6 @@ git push origin gh-pages:gh-pages
 # git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:zhangling91/blog.git master:gh-pages
+# git push -f git@github.com:zhanglingx/blog.git master:gh-pages
 
 cd -

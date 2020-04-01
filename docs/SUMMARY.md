@@ -8,7 +8,8 @@
 
 ## Node.js
 
-* [S3+Lambda实现图片压缩✍](node.js/s3+lambda-compress-images.md)
+* [S3+Lambda实现图片压缩✍](nodejs/s3+lambda-compress-images.md)
+* [使用Node.js制作命令行工具](nodejs/nodejs-command-line-tool.md)
 
 ## 工程化 <a id="engineering"></a>
 
