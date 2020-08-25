@@ -2,6 +2,9 @@
 
 记录技术、职场经验与人生感悟；点此查看[文章分类](https://github.com/zhanglingx/Blog/labels)。
 
+## 2020.08
+* [你为什么要做管理？](https://github.com/zhanglingx/blog/issues/9)
+
 ## 2020.04
 * [技术总监如何掌握所有技术细节？](https://github.com/zhanglingx/blog/issues/8)
 
