@@ -23,6 +23,13 @@
   },
   "homepage": "https://github.com/zhanglingx/blog#readme",
   "devDependencies": {
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
     "vuepress": "^1.5.4"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "js-base64": "^3.5.2",
+    "mavon-editor": "^2.9.0"
   }
 }
