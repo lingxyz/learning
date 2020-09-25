@@ -23,15 +23,13 @@
 </template>
 
 <script>
-import { mavonEditor as MavonEditor } from 'mavon-editor'
-import 'mavon-editor/dist/css/index.css'
 import axios from 'axios'
 import { Base64 } from 'js-base64'
 
 // github api doc: https://developer.github.com/v3/repos/contents/
 const githubFileMessageApi = 'https://api.github.com/repos/zhanglingx/blog/contents/docs/'
 const githubChangeFileApi = 'https://api.github.com/repos/zhanglingx/blog/contents/docs/'
-const githubAccessToken = '5396e21a9e215eed295ab706240e30c007108ea8'
+const githubAccessToken = '25fdbe3700dcaf7a1906a3306069fda435aa3d58'
 
 export default {
   data () {
@@ -43,10 +41,6 @@ export default {
         content: ''
       }
     }
-  },
-
-  components: {
-    MavonEditor
   },
 
   methods: {

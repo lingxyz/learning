@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/zhanglingx/blog#readme",
   "devDependencies": {
+    "element-ui": "^2.13.2",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
     "vuepress": "^1.5.4"
