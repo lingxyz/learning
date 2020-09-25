@@ -1,6 +1,8 @@
-# Table of contents
+---
+sidebar: false
+---
 
-* [个人博客](README.md)
+# Zero's Blog
 
 ## JavaScript
 
@@ -32,4 +34,3 @@
 * [持续自律，享受孤独✍](others/self-discipline&enjoy-solitude.md)
 * [那些如果中学就掌握的学习方法✍](others/learning-method.md)
 * [技术总监如何掌握所有技术细节？](others/technical-director-vs-technical-details.md)
-

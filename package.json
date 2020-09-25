@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "记录技术、职场经验与人生感悟",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "./deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhanglingx/blog.git"
+  },
+  "author": "Zero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhanglingx/blog/issues"
+  },
+  "homepage": "https://github.com/zhanglingx/blog#readme",
+  "devDependencies": {
+    "vuepress": "^1.5.4"
+  }
+}
