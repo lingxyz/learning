@@ -9,22 +9,26 @@
   * 混合APP
 
 * 后端
-  * 占位项
-  * 占位项
-  * 占位项
-  * 占位项
-  * 占位项
+  * Java
+  * Spring
+  * Node.js
+  * Nest.js
+  * Golang
+  * Gin
+  * Micro Service
+  * DevOps
 
 * 大数据
-  * 占位项
-  * 占位项
-  * 占位项
-  * 占位项
-  * 占位项
+  * 数据采集
+  * 数据分析
+  * 流式计算
+  * 数据存储
 
 * 机器学习
-  * 占位项
-  * 占位项
-  * 占位项
-  * 占位项
-  * 占位项
+  * Python
+  * Math
+  * Tensorflow
+  * Pytorch
+  * 图像识别
+  * 语音识别
+  * AI 中台
