@@ -10,13 +10,13 @@ npm run build
 cd docs/.vuepress/dist
 
 # 发布到自定义域名
-echo 'blog.zhangling.me' > CNAME
+# echo 'note.zhangling.me' > CNAME
 
 git init
 git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:zhanglingx/blog.git master:gh-pages
+git push -f git@github.com:zhanglingme/note.git master:gh-pages
 
 cd -
