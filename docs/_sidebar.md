@@ -1,34 +1,58 @@
 * 基础
-  * [算法](./algorithm.md)
+  * 系统结构
+  * 操作系统
+  * 网络
+  * 数据结构
+  * [算法](algorithm.md)
+  * 设计模式
+  * 架构原则
 
-* 前端
-
+* Web前端
   * HTML
-  * [CSS](./css.md)
+  * [CSS](css.md)
   * JavaScript
   * TypeScript
-  * [Vue](./vue.md)
+  * [Vue](vue.md)
   * React
-  * 微信小程序
-  * 混合APP
-* 后端
+  * Webpack
+  * Vite
 
+* 微信端
+  * 微信小程序
+  * 微信公众号
+  * 微信企业号
+  * 微信小游戏
+  * 微信商户支付
+
+* 客户端
+  * 混合APP
+  * React Native
+  * Flutter
+  * Electron
+
+* 后端
   * Java *
   * Spring
   * Node.js
   * Nest.js
   * Golang
   * Gin
-  * Micro Service
+  * 微服务
+  * 高并发
+  * 分布式
   * DevOps
-* 大数据
 
+* 数据存储
+  * MySQL *
+  * Redis
+
+* 大数据
   * 数据采集
   * 数据分析
   * 流式计算
   * 数据存储
-* 机器学习
 
+* 机器学习
   * Python
   * Math
   * Tensorflow
