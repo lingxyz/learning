@@ -1,3 +1,6 @@
+* 基础
+  * [算法](./algorithm.md)
+
 * 前端
 
   * HTML

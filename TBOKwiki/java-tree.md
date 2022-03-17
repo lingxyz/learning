@@ -1,0 +1,1610 @@
+## 运维
+
+* [运维 &amp; 统计 &amp; 技术支持](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#运维--统计--技术支持)
+	* [常规监控](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#常规监控)
+	* [APM](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#apm)
+	* [统计分析](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#统计分析)
+	* [持续集成(CI/CD)](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#持续集成cicd)
+		* [Jenkins](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#jenkins)
+		* [环境分离](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#环境分离)
+	* [自动化运维](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#自动化运维)
+		* [Ansible](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#ansible)
+		* [puppet](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#puppet)
+		* [chef](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#chef)
+	* [测试](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#测试)
+		* [TDD 理论](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#tdd-理论)
+		* [单元测试](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#单元测试)
+		* [压力测试](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#压力测试)
+		* [全链路压测](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#全链路压测)
+		* [A/B 、灰度、蓝绿测试](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#ab-灰度蓝绿测试)
+	* [虚拟化](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#虚拟化)
+		* [KVM](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#kvm)
+		* [Xen](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#xen)
+		* [OpenVZ](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#openvz)
+	* [容器技术](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#容器技术)
+		* [Docker](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#docker)
+	* [云技术](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#云技术)
+		* [OpenStack](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#openstack)
+	* [DevOps](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#devops)
+	* [文档管理](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#文档管理)
+
+## 中间件
+* [中间件](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#中间件)
+	* [Web Server](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#web-server)
+		* [Nginx](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#nginx)
+		* [OpenResty](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#openresty)
+		* [Apache Httpd](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#apache-httpd)
+		* [Tomcat](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#tomcat)
+			* [架构原理](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#架构原理)
+			* [调优方案](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#调优方案)
+		* [Jetty](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#jetty)
+	* [缓存](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#缓存)
+		* [本地缓存](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#本地缓存)
+	* [客户端缓存](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#客户端缓存)
+	* [服务端缓存](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#服务端缓存)
+		* [Web缓存](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#web缓存)
+		* [Memcached](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#memcached)
+		* [Redis](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#redis)
+			* [架构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#架构)
+			* [回收策略](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#回收策略)
+		* [Tair](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#tair)
+	* [消息队列](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#消息队列)
+		* [消息总线](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#消息总线)
+		* [消息的顺序](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#消息的顺序)
+		* [RabbitMQ](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#rabbitmq)
+		* [RocketMQ](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#rocketmq)
+		* [ActiveMQ](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#activemq)
+		* [Kafka](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#kafka)
+		* [Redis 消息推送](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#redis-消息推送)
+		* [ZeroMQ](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#zeromq)
+	* [定时调度](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#定时调度)
+		* [单机定时调度](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#单机定时调度)
+		* [分布式定时调度](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#分布式定时调度)
+	* [RPC](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#rpc)
+		* [Dubbo](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#dubbo)
+		* [Thrift](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#thrift)
+		* [gRPC](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#grpc)
+	* [数据库中间件](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据库中间件)
+		* [Sharding Jdbc](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#sharding-jdbc)
+	* [日志系统](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#日志系统)
+		* [日志搜集](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#日志搜集)
+	* [配置中心](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#配置中心)
+	* [API 网关](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#api-网关)
+
+## 搜索引擎
+* [搜索引擎](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#搜索引擎)
+	* [搜索引擎原理](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#搜索引擎原理)
+	* [Lucene](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#lucene)
+	* [Elasticsearch](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#elasticsearch)
+	* [Solr](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#solr)
+	* [sphinx](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#sphinx)
+
+## 性能
+* [性能](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#性能)
+	* [性能优化方法论](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#性能优化方法论)
+	* [容量评估](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#容量评估)
+	* [CDN 网络](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#cdn-网络)
+	* [连接池](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#连接池)
+	* [性能调优](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#性能调优)
+
+## 大数据
+* [大数据](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#大数据)
+	* [流式计算](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#流式计算)
+		* [Storm](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#storm)
+		* [Flink](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#flink)
+		* [Kafka Stream](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#kafka-stream)
+		* [应用场景](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#应用场景-1)
+	* [Hadoop](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#hadoop)
+		* [HDFS](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#hdfs)
+		* [MapReduce](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#mapreduce)
+		* [Yarn](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#yarn)
+	* [Spark](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#spark)
+
+## 安全
+* [安全](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#安全)
+	* [web 安全](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#web-安全)
+		* [XSS](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#xss)
+		* [CSRF](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#csrf)
+		* [SQL 注入](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#sql-注入)
+		* [Hash Dos](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#hash-dos)
+		* [脚本注入](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#脚本注入)
+		* [漏洞扫描工具](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#漏洞扫描工具)
+		* [验证码](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#验证码)
+	* [DDoS 防范](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#ddos-防范)
+	* [用户隐私信息保护](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#用户隐私信息保护)
+	* [序列化漏洞](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#序列化漏洞)
+	* [加密解密](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#加密解密)
+		* [对称加密](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#对称加密)
+		* [哈希算法](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#哈希算法)
+		* [非对称加密](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#非对称加密)
+	* [服务器安全](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#服务器安全)
+	* [数据安全](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据安全)
+		* [数据备份](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据备份)
+	* [网络隔离](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#网络隔离)
+		* [内外网分离](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#内外网分离)
+		* [登录跳板机](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#登录跳板机)
+	* [授权、认证](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#授权认证)
+		* [RBAC](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#rbac)
+		* [OAuth2.0](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#oauth20)
+		* [双因素认证（2FA）](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#双因素认证2fa)
+		* [单点登录(SSO)](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#单点登录sso)
+
+## 常用开源框架
+* [常用开源框架](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#常用开源框架)
+	* [开源协议](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#开源协议)
+	* [日志框架](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#日志框架)
+		* [Log4j、Log4j2](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#log4jlog4j2)
+		* [Logback](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#logback)
+	* [ORM](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#orm)
+	* [网络框架](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#网络框架)
+	* [Web 框架](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#web-框架)
+		* [Spring 家族](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#spring-家族)
+	* [工具框架](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#工具框架)
+
+## 分布式
+* [分布式设计](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#分布式设计)
+	* [扩展性设计](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#扩展性设计)
+	* [稳定性 &amp; 高可用](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#稳定性--高可用)
+		* [硬件负载均衡](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#硬件负载均衡)
+		* [软件负载均衡](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#软件负载均衡)
+		* [限流](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#限流)
+		* [应用层容灾](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#应用层容灾)
+		* [跨机房容灾](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#跨机房容灾)
+		* [容灾演练流程](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#容灾演练流程)
+		* [平滑启动](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#平滑启动)
+	* [数据库扩展](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据库扩展)
+		* [读写分离模式](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#读写分离模式)
+		* [分片模式](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#分片模式)
+	* [服务治理](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#服务治理)
+		* [服务注册与发现](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#服务注册与发现)
+		* [服务路由控制](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#服务路由控制)
+	* [分布式一致](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#分布式一致)
+		* [CAP 与 BASE 理论](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#cap-与-base-理论)
+		* [分布式锁](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#分布式锁)
+		* [分布式一致性算法](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#分布式一致性算法)
+			* [PAXOS](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#paxos)
+			* [Zab](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#zab)
+			* [Raft](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#raft)
+			* [Gossip](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#gossip)
+			* [两阶段提交、多阶段提交](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#两阶段提交多阶段提交)
+		* [幂等](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#幂等)
+		* [分布式一致方案](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#分布式一致方案)
+		* [分布式 Leader 节点选举](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#分布式-leader-节点选举)
+		* [TCC(Try/Confirm/Cancel) 柔性事务](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#tcctryconfirmcancel-柔性事务)
+	* [分布式文件系统](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#分布式文件系统)
+	* [唯一ID 生成](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#唯一id-生成)
+		* [全局唯一ID](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#全局唯一id)
+	* [一致性Hash算法](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#一致性hash算法)
+
+## 设计思想
+* [设计思想 &amp; 开发模式](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#设计思想--开发模式)
+	* [DDD(Domain-driven Design - 领域驱动设计)](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#ddddomain-driven-design---领域驱动设计)
+		* [命令查询职责分离(CQRS)](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#命令查询职责分离cqrs)
+		* [贫血，充血模型](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#贫血充血模型)
+	* [Actor 模式](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#actor-模式)
+	* [响应式编程](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#响应式编程)
+		* [Reactor](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#reactor)
+		* [RxJava](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#rxjava)
+		* [Vert.x](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#vertx)
+	* [DODAF2.0](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#dodaf20)
+	* [Serverless](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#serverless)
+	* [Service Mesh](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#service-mesh)
+
+## 项目管理
+* [项目管理](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#项目管理)
+	* [架构评审](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#架构评审)
+	* [重构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#重构)
+	* [代码规范](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#代码规范)
+	* [代码 Review](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#代码-review)
+	* [RUP](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#rup)
+	* [看板管理](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#看板管理)
+	* [SCRUM](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#scrum)
+	* [敏捷开发](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#敏捷开发)
+	* [极限编程（XP）](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#极限编程xp)
+	* [结对编程](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#结对编程)
+	* [FMEA管理模式](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#fmea管理模式)
+
+## [通用业务术语](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#通用业务术语)
+
+
+## [技术趋势](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#技术趋势)
+
+## 政策、法规
+- [政策、法规](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#政策法规)
+	* [法律](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#法律)
+		* [严格遵守刑法253法条](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#严格遵守刑法253法条)
+
+## [架构师素质](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#架构师素质)
+
+## 资讯
+- [资讯](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#资讯)
+	* [行业资讯](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#行业资讯)
+	* [公众号列表](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#公众号列表)
+	* [博客](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#博客)
+		* [团队博客](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#团队博客)
+		* [个人博客](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#个人博客)
+	* [综合门户、社区](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#综合门户社区)
+	* [问答、讨论类社区](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#问答讨论类社区)
+	* [行业数据分析](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#行业数据分析)
+	* [专项网站](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#专项网站)
+	* [其他类](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#其他类)
+	* [推荐参考书](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#推荐参考书)
+		* [在线电子书](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#在线电子书)
+		* [纸质书](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#纸质书)
+			* [开发方面](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#开发方面)
+			* [架构方面](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#架构方面)
+			* [技术管理方面](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#技术管理方面)
+			* [基础理论](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#基础理论-1)
+			* [工具方面](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#工具方面)
+			* [大数据方面](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#大数据方面)
+
+## 技术资源
+- [技术资源](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#技术资源)
+	* [开源资源](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#开源资源)
+	* [手册、文档、教程](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#手册文档教程)
+	* [在线课堂](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#在线课堂)
+	* [会议、活动](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#会议活动)
+	* [常用APP](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#常用app)
+	* [找工作](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#找工作)
+	* [工具](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#工具)
+	* [代码托管](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#代码托管)
+	* [文件服务](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#文件服务)
+	* [综合云服务商](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#综合云服务商)
+		* [VPS](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#vps)
+
+**（Toc generated by [simple-php-github-toc](https://github.com/xingshaocheng/simple-php-github-toc) ）**
+
+-----------------------------------------------------------------------------------------------------------
+
+以下待整理
+
+# 运维 & 统计 & 技术支持
+
+## 常规监控
+
+* [《腾讯业务系统监控的修炼之路》](https://blog.csdn.net/enweitech/article/details/77849205)
+	* 监控的方式：主动、被动、旁路(比如舆情监控)
+	* 监控类型： 基础监控、服务端监控、客户端监控、
+	监控、用户端监控
+	* 监控的目标：全、块、准
+	* 核心指标：请求量、成功率、耗时
+
+* [《开源还是商用？十大云运维监控工具横评》](https://www.oschina.net/news/67525/monitoring-tools)
+	* Zabbix、Nagios、Ganglia、Zenoss、Open-falcon、监控宝、 360网站服务监控、阿里云监控、百度云观测、小蜜蜂网站监测等。
+
+* [《监控报警系统搭建及二次开发经验》](http://developer.51cto.com/art/201612/525373.htm)
+
+**命令行监控工具**
+
+* [《常用命令行监控工具》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/44-an-quan-yu-yun-wei/445-fu-wu-qi-zhuang-tai-jian-ce/4451-ming-ling-xing-gong-ju.html)
+	* top、sar、tsar、nload
+
+* [《20个命令行工具监控 Linux 系统性能》](http://blog.jobbole.com/96846/)
+
+* [《JVM性能调优监控工具jps、jstack、jmap、jhat、jstat、hprof使用详解》](https://my.oschina.net/feichexia/blog/196575)
+
+## APM
+
+APM —  Application Performance Management
+
+* [《Dapper，大规模分布式系统的跟踪系统》](http://bigbully.github.io/Dapper-translation/)
+
+* [CNCF OpenTracing](http://opentracing.io)，[中文版](https://github.com/opentracing-contrib/opentracing-specification-zh)
+
+* 主要开源软件，按字母排序
+  * [Apache SkyWalking](https://github.com/apache/incubator-skywalking)
+  * [CAT](https://github.com/dianping/cat)
+  * [CNCF jaeger](https://github.com/jaegertracing/jaeger)
+  * [Pinpoint](https://github.com/naver/pinpoint)
+  * [Zipkin](https://github.com/openzipkin/zipkin)
+
+* [《开源APM技术选型与实战》](http://www.infoq.com/cn/articles/apm-Pinpoint-practice)
+	* 主要基于 Google的Dapper（大规模分布式系统的跟踪系统） 思想。
+
+
+
+## 统计分析
+
+* [《流量统计的基础：埋点》](https://zhuanlan.zhihu.com/p/25195217)
+	* 常用指标：访问与访客、停留时长、跳出率、退出率、转化率、参与度
+
+* [《APP埋点常用的统计工具、埋点目标和埋点内容》](http://www.25xt.com/company/17066.html)
+	* 第三方统计：友盟、百度移动、魔方、App Annie、talking data、神策数据等。
+
+* [《美团点评前端无痕埋点实践》](https://tech.meituan.com/mt-mobile-analytics-practice.html)
+	* 所谓无痕、即通过可视化工具配置采集节点，在前端自动解析配置并上报埋点数据，而非硬编码。
+
+
+## 持续集成(CI/CD)
+
+* [《持续集成是什么？》](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)
+* [《8个流行的持续集成工具》](https://www.testwo.com/article/1170)
+
+### Jenkins
+
+* [《使用Jenkins进行持续集成》](https://www.liaoxuefeng.com/article/001463233913442cdb2d1bd1b1b42e3b0b29eb1ba736c5e000)
+
+### 环境分离
+
+开发、测试、生成环境分离。
+
+* [《开发环境、生产环境、测试环境的基本理解和区》](https://my.oschina.net/sancuo/blog/214904)
+
+## 自动化运维
+
+### Ansible
+* [《Ansible中文权威指南》](http://www.ansible.com.cn/)
+* [《Ansible基础配置和企业级项目实用案例》](https://www.cnblogs.com/heiye123/articles/7855890.html)
+
+### puppet
+* [《自动化运维工具——puppet详解》](https://www.cnblogs.com/keerya/p/8040071.html)
+
+### chef
+* [《Chef 的安装与使用》](https://www.ibm.com/developerworks/cn/cloud/library/1407_caomd_chef/)
+
+## 测试
+
+### TDD 理论
+
+* [《深度解读 - TDD（测试驱动开发）》](https://www.jianshu.com/p/62f16cd4fef3)
+	* 基于测试用例编码功能代码，XP（Extreme Programming）的核心实践.
+	* 好处：一次关注一个点，降低思维负担；迎接需求变化或改善代码的设计；提前澄清需求；快速反馈；
+
+### 单元测试
+
+* [《Java单元测试之JUnit篇》](https://www.cnblogs.com/happyzm/p/6482886.html)
+* [《JUnit 4 与 TestNG 对比》](https://blog.csdn.net/hotdust/article/details/53406086)
+	* TestNG 覆盖 JUnit 功能，适用于更复杂的场景。
+* [《单元测试主要的测试功能点》](https://blog.csdn.net/wqetfg/article/details/50900512)
+	* 模块接口测试、局部数据结构测试、路径测试 、错误处理测试、边界条件测试 。
+
+### 压力测试
+
+* [《Apache ab 测试使用指南》](https://blog.csdn.net/blueheart20/article/details/52170790)
+* [《大型网站压力测试及优化方案》](https://www.cnblogs.com/binyue/p/6141088.html)
+* [《10大主流压力/负载/性能测试工具推荐》](http://news.chinabyte.com/466/14126966.shtml)
+* [《真实流量压测工具 tcpcopy应用浅析》](http://quentinxxz.iteye.com/blog/2249799)
+* [《nGrinder 简易使用教程》](https://www.cnblogs.com/jwentest/p/7136727.html)
+
+
+### 全链路压测
+* [《京东618：升级全链路压测方案，打造军演机器人ForceBot》](http://www.infoq.com/cn/articles/jd-618-upgrade-full-link-voltage-test-program-forcebot)
+* [《饿了么全链路压测的探索与实践》](https://zhuanlan.zhihu.com/p/30306892)
+* [《四大语言，八大框架｜滴滴全链路压测解决之道》](https://zhuanlan.zhihu.com/p/28355759)
+* [《全链路压测经验》](https://www.jianshu.com/p/27060fd61f72)
+
+
+### A/B 、灰度、蓝绿测试
+
+* [《技术干货 | AB 测试和灰度发布探索及实践》](https://testerhome.com/topics/11165)
+* [《nginx 根据IP 进行灰度发布》](http://blog.51cto.com/purplegrape/1403123)
+
+* [《蓝绿部署、A/B 测试以及灰度发布》](https://www.v2ex.com/t/344341)
+
+## 虚拟化
+
+* [《VPS的三种虚拟技术OpenVZ、Xen、KVM优缺点比较》](https://blog.csdn.net/enweitech/article/details/52910082)
+
+### KVM
+* [《KVM详解，太详细太深入了，经典》](http://blog.chinaunix.net/uid-20201831-id-5775661.html)
+* [《【图文】KVM 虚拟机安装详解》](https://www.coderxing.com/kvm-install.html)
+
+### Xen
+* [《Xen虚拟化基本原理详解》](https://www.cnblogs.com/sddai/p/5931201.html)
+
+### OpenVZ
+* [《开源Linux容器 OpenVZ 快速上手指南》](https://blog.csdn.net/longerzone/article/details/44829255)
+
+## 容器技术
+
+### Docker
+* [《几张图帮你理解 docker 基本原理及快速入门》](https://www.cnblogs.com/SzeCheng/p/6822905.html)
+* [《Docker 核心技术与实现原理》](https://draveness.me/docker)
+* [《Docker 教程》](http://www.runoob.com/docker/docker-tutorial.html)
+
+## 云技术
+
+### OpenStack
+* [《OpenStack构架知识梳理》](https://www.cnblogs.com/klb561/p/8660264.html)
+
+## DevOps
+* [《一分钟告诉你究竟DevOps是什么鬼？》](https://www.cnblogs.com/jetzhang/p/6068773.html)
+* [《DevOps详解》](http://www.infoq.com/cn/articles/detail-analysis-of-devops)
+
+## 文档管理
+
+* [Confluence-收费文档管理系统](http://www.confluence.cn/)
+* GitLab?
+* Wiki
+
+# 中间件
+
+## Web Server
+
+### Nginx
+* [《Ngnix的基本学习-多进程和Apache的比较》](https://blog.csdn.net/qq_25797077/article/details/52200722)
+	* Nginx 通过异步非阻塞的事件处理机制实现高并发。Apache 每个请求独占一个线程，非常消耗系统资源。
+	* 事件驱动适合于IO密集型服务(Nginx)，多进程或线程适合于CPU密集型服务(Apache)，所以Nginx适合做反向代理，而非web服务器使用。
+
+* [《nginx与Apache的对比以及优缺点》](https://www.cnblogs.com/cunkouzh/p/5410154.html)
+	* nginx只适合静态和反向代理，不适合处理动态请求。
+
+### OpenResty
+* [官方网站](http://openresty.org/cn/)
+* [《浅谈 OpenResty》](http://www.linkedkeeper.com/detail/blog.action?bid=1034)
+	* 通过 Lua 模块可以在Nginx上进行开发。
+
+### Apache Httpd
+* [官方网站](http://httpd.apache.org/)
+
+### Tomcat
+
+#### 架构原理
+* [《TOMCAT原理详解及请求过程》](https://www.cnblogs.com/hggen/p/6264475.html)
+* [《Tomcat服务器原理详解》](https://www.cnblogs.com/crazylqy/p/4706223.html)
+* [《Tomcat 系统架构与设计模式,第 1 部分: 工作原理》](https://www.ibm.com/developerworks/cn/java/j-lo-tomcat1/)
+
+* [《四张图带你了解Tomcat系统架构》](https://blog.csdn.net/xlgen157387/article/details/79006434)
+
+* [《JBoss vs. Tomcat: Choosing A Java Application Server》](https://www.futurehosting.com/blog/jboss-vs-tomcat-choosing-a-java-application-server/)
+	* Tomcat 是轻量级的 Serverlet 容器，没有实现全部 JEE 特性（比如持久化和事务处理），但可以通过其他组件代替，比如Srping。
+	* Jboss 实现全部了JEE特性，软件开源免费、文档收费。
+
+#### 调优方案
+
+* [《Tomcat 调优方案》](https://www.cnblogs.com/sunfenqing/p/7339058.html)
+	* 启动NIO模式（或者APR）；调整线程池；禁用AJP连接器（Nginx+tomcat的架构，不需要AJP）；
+
+* [《tomcat http协议与ajp协议》](http://blog.chinaunix.net/uid-20662363-id-3012760.html)
+* [《AJP与HTTP比较和分析》](http://dmouse.iteye.com/blog/1354527)
+	* AJP 协议（8009端口）用于降低和前端Server（如Apache，而且需要支持AJP协议）的连接数(前端)，通过长连接提高性能。
+	* 并发高时，AJP协议优于HTTP协议。
+
+### Jetty
+* [《Jetty 的工作原理以及与 Tomcat 的比较》](https://www.ibm.com/developerworks/cn/java/j-lo-jetty/)
+* [《jetty和tomcat优势比较》](https://blog.csdn.net/doutao6677/article/details/51957288)
+	* 架构比较:Jetty的架构比Tomcat的更为简单。
+	* 性能比较：Jetty和Tomcat性能方面差异不大，Jetty默认采用NIO结束在处理I/O请求上更占优势，Tomcat默认采用BIO处理I/O请求，Tomcat适合处理少数非常繁忙的链接，处理静态资源时性能较差。
+	* 其他方面：Jetty的应用更加快速，修改简单，对新的Servlet规范的支持较好;Tomcat 对JEE和Servlet 支持更加全面。
+
+## 缓存
+
+* [《缓存失效策略（FIFO 、LRU、LFU三种算法的区别）》](https://blog.csdn.net/clementad/article/details/48229243)
+
+### 本地缓存
+
+* [《HashMap本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4211.html)
+
+* [《EhCache本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4212-ehcache.html)
+	* 堆内、堆外、磁盘三级缓存。
+	* 可按照缓存空间容量进行设置。
+	* 按照时间、次数等过期策略。
+
+* [《Guava Cache》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4213-guava-cache.html)
+	* 简单轻量、无堆外、磁盘缓存。
+
+* [《Nginx本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/422-fu-wu-duan-ben-di-huan-cun/nginx-ben-di-huan-cun.html)
+
+* [《Pagespeed—懒人工具，服务器端加速》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/422-fu-wu-duan-ben-di-huan-cun/4222-pagespeed.html)
+
+## 客户端缓存
+
+* [《浏览器端缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/423-ke-hu-duan-huan-cun.html)
+	* 主要是利用 Cache-Control 参数。
+
+* [《H5 和移动端 WebView 缓存机制解析与实战》](https://mp.weixin.qq.com/s/qHm_dJBhVbv0pJs8Crp77w)
+
+## 服务端缓存
+
+### Web缓存
+
+* [nuster](https://github.com/jiangwenyuan/nuster) - nuster cache
+* [varnish](https://github.com/varnishcache/varnish-cache) - varnish cache
+* [squid](https://github.com/squid-cache/squid) - squid cache
+
+### Memcached
+* [《Memcached 教程》](http://www.runoob.com/Memcached/Memcached-tutorial.html)
+* [《深入理解Memcached原理》](https://blog.csdn.net/chenleixing/article/details/47035453)
+	* 采用多路复用技术提高并发性。
+	* slab分配算法： memcached给Slab分配内存空间，默认是1MB。分配给Slab之后 把slab的切分成大小相同的chunk，Chunk是用于缓存记录的内存空间，Chunk 的大小默认按照1.25倍的速度递增。好处是不会频繁申请内存，提高IO效率，坏处是会有一定的内存浪费。
+* [《Memcached软件工作原理》](https://www.jianshu.com/p/36e5cd400580)
+* [《Memcache技术分享：介绍、使用、存储、算法、优化、命中率》](http://zhihuzeye.com/archives/2361)
+
+* [《memcache 中 add 、 set 、replace 的区别》](https://blog.csdn.net/liu251890347/article/details/37690045)
+	* 区别在于当key存在还是不存在时，返回值是true和false的。
+
+* [**《memcached全面剖析》**](https://pan.baidu.com/s/1qX00Lti?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=)
+
+## 定时调度
+
+### 单机定时调度
+
+* [《linux定时任务cron配置》](https://www.cnblogs.com/shuaiqing/p/7742382.html)
+
+* [《Linux cron运行原理》](https://my.oschina.net/daquan/blog/483305)
+	* fork 进程 + sleep 轮询
+
+* [《Quartz使用总结》](https://www.cnblogs.com/drift-ice/p/3817269.html)
+* [《Quartz源码解析 ---- 触发器按时启动原理》](https://blog.csdn.net/wenniuwuren/article/details/42082981/)
+* [《quartz原理揭秘和源码解读》](https://www.jianshu.com/p/bab8e4e32952)
+	* 定时调度在 QuartzSchedulerThread 代码中，while()无限循环，每次循环取出时间将到的trigger，触发对应的job，直到调度器线程被关闭。
+
+
+### 分布式定时调度
+
+* [《这些优秀的国产分布式任务调度系统，你用过几个？》](https://blog.csdn.net/qq_16216221/article/details/70314337)
+	* opencron、LTS、XXL-JOB、Elastic-Job、Uncode-Schedule、Antares
+
+* [《Quartz任务调度的基本实现原理》](https://www.cnblogs.com/zhenyuyaodidiao/p/4755649.html)
+	* Quartz集群中，独立的Quartz节点并不与另一其的节点或是管理节点通信，而是通过相同的数据库表来感知到另一Quartz应用的
+
+
+## RPC
+
+* [《从零开始实现RPC框架 - RPC原理及实现》](https://blog.csdn.net/top_code/article/details/54615853)
+	* 核心角色：Server: 暴露服务的服务提供方、Client: 调用远程服务的服务消费方、Registry: 服务注册与发现的注册中心。
+
+* [《分布式RPC框架性能大比拼 dubbo、motan、rpcx、gRPC、thrift的性能比较》](https://blog.csdn.net/testcs_dn/article/details/78050590)
+
+### Dubbo
+* [官方网站](http://dubbo.apache.org/)
+* [dubbo实现原理简单介绍](https://www.cnblogs.com/steven520213/p/7606598.html)
+
+** SPI **
+TODO
+
+### Thrift
+* [官方网站](http://thrift.apache.org/)
+* [《Thrift RPC详解》](https://blog.csdn.net/kesonyk/article/details/50924489)
+	* 支持多语言，通过中间语言定义接口。
+
+### gRPC
+
+服务端可以认证加密，在外网环境下，可以保证数据安全。
+
+* [官方网站](https://grpc.io/)
+* [《你应该知道的RPC原理》](https://www.cnblogs.com/LBSer/p/4853234.html)
+
+
+## 数据库中间件
+
+### Sharding Jdbc
+
+* [官网](http://shardingjdbc.io/)
+
+## 日志系统
+
+### 日志搜集
+
+* [《从零开始搭建一个ELKB日志收集系统》](http://cjting.me/misc/build-log-system-with-elkb/)
+* [《用ELK搭建简单的日志收集分析系统》](https://blog.csdn.net/lzw_2006/article/details/51280058)
+* [《日志收集系统-探究》](https://www.cnblogs.com/beginmind/p/6058194.html)
+
+## 配置中心
+
+* [Apollo - 携程开源的配置中心应用](https://github.com/ctripcorp/apollo)
+	* Spring Boot 和 Spring Cloud
+	* 支持推、拉模式更新配置
+	* 支持多种语言
+
+* [《基于zookeeper实现统一配置管理》](https://blog.csdn.net/u011320740/article/details/78742625)
+
+* [《 Spring Cloud Config 分布式配置中心使用教程》](https://www.cnblogs.com/shamo89/p/8016908.html)
+
+servlet 3.0 异步特性可用于配置中心的客户端
+* [《servlet3.0 新特性——异步处理》](https://www.cnblogs.com/dogdogwang/p/7151866.html)
+
+## API 网关
+
+主要职责：请求转发、安全认证、协议转换、容灾。
+
+* [《API网关那些儿》](http://yunlzheng.github.io/2017/03/14/the-things-about-api-gateway/)
+* [《谈API网关的背景、架构以及落地方案》](http://www.infoq.com/cn/news/2016/07/API-background-architecture-floo)
+
+* [《使用Zuul构建API Gateway》](https://blog.csdn.net/zhanglh046/article/details/78651993)
+* [《Spring Cloud Gateway 源码解析》](http://www.iocoder.cn/categories/Spring-Cloud-Gateway/?vip&architect-awesome)
+* [《HTTP API网关选择之一Kong介绍》](https://mp.weixin.qq.com/s/LIq2CiXJQmmjBC0yvYLY5A)
+
+
+# 搜索引擎
+
+## 搜索引擎原理
+
+* [《倒排索引--搜索引擎入门》](https://www.jianshu.com/p/0193dc44135b)
+
+## Lucene
+* [《Lucene入门简介》](https://www.cnblogs.com/rodge-run/p/6551152.html)
+
+## Elasticsearch
+
+* [《Elasticsearch学习，请先看这一篇！》](https://blog.csdn.net/laoyang360/article/details/52244917)
+* [《Elasticsearch索引原理》](https://blog.csdn.net/cyony/article/details/65437708)
+
+## Solr
+* [《 Apache Solr入门教程》](https://blog.csdn.net/u011936655/article/details/51960005)
+* [《elasticsearch与solr比较》](https://blog.csdn.net/convict_eva/article/details/53537837)
+
+## sphinx
+* [《Sphinx 的介绍和原理探索》](http://blog.jobbole.com/101672/)
+
+# 性能
+
+## 性能优化方法论
+
+* [《15天的性能优化工作，5方面的调优经验》](https://blog.csdn.net/huangwenyi1010/article/details/72673447?ref=myread)
+	* 代码层面、业务层面、数据库层面、服务器层面、前端优化。
+
+* [《系统性能优化的几个方面》](https://blog.csdn.net/tenglizhe/article/details/44563135)
+
+## 容量评估
+* [《联网性能与容量评估的方法论和典型案例》](https://blog.csdn.net/u012528360/article/details/70054156)
+* [《互联网架构，如何进行容量设计？》](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959542&idx=1&sn=2494bbea9a855e0e1c3ccd6d2562a600&scene=21#wechat_redirect)
+	* 评估总访问量、评估平均访问量QPS、评估高峰QPS、评估系统、单机极限QPS
+
+## 连接池
+
+* [《主流Java数据库连接池比较与开发配置实战》](https://blog.csdn.net/fysuccess/article/details/66972554)
+
+## 性能调优
+
+* [《九大Java性能调试工具，必备至少一款》](https://blog.csdn.net/yethyeth/article/details/73266455)
+
+# 大数据
+
+## 流式计算
+
+### Storm
+* [官方网站](http://storm.apache.org/)
+* [《最详细的Storm入门教程》](https://blog.csdn.net/uisoul/article/details/77989927)
+
+### Flink
+* [《Flink之一 Flink基本原理介绍》](https://blog.csdn.net/lisi1129/article/details/54844919)
+
+### Kafka Stream
+* [《Kafka Stream调研：一种轻量级流计算模式》](https://yq.aliyun.com/articles/58382)
+
+### 应用场景
+
+例如：
+
+* 广告相关实时统计；
+* 推荐系统用户画像标签实时更新；
+* 线上服务健康状况实时监测；
+* 实时榜单；
+* 实时数据统计。
+
+## Hadoop
+
+* [《用通俗易懂的话说下hadoop是什么,能做什么》](https://blog.csdn.net/houbin0912/article/details/72967178)
+* [《史上最详细的Hadoop环境搭建》](http://gitbook.cn/books/5954c9600326c7705af8a92a/index.html)
+
+### HDFS
+* [《【Hadoop学习】HDFS基本原理》](https://segmentfault.com/a/1190000011575458)
+
+### MapReduce
+* [《用通俗易懂的大白话讲解Map/Reduce原理》](https://blog.csdn.net/oppo62258801/article/details/72884633)
+* [《 简单的map-reduce的java例子》](https://blog.csdn.net/foye12/article/details/78358292)
+
+### Yarn
+* [《初步掌握Yarn的架构及原理》](http://www.cnblogs.com/codeOfLife/p/5492740.html)
+
+## Spark
+* [《Spark(一): 基本架构及原理》](http://www.cnblogs.com/tgzhu/p/5818374.html)
+
+
+# 安全
+
+## web 安全
+
+### XSS
+* [《xss攻击原理与解决方法》](https://blog.csdn.net/qq_21956483/article/details/54377947)
+### CSRF
+* [《CSRF原理及防范》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/641-web-an-quan-fang-fan/6412-csrf.html)
+
+### SQL 注入
+
+* [《SQL注入》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/641-web-an-quan-fang-fan/6413-sql-zhu-ru.html)
+
+### Hash Dos
+
+
+* [《邪恶的JAVA HASH DOS攻击》](http://www.freebuf.com/articles/web/14199.html)
+	* 利用JsonObjet 上传大Json，JsonObject 底层使用HashMap；不同的数据产生相同的hash值，使得构建Hash速度变慢，耗尽CPU。
+* [《一种高级的DoS攻击-Hash碰撞攻击》](https://yq.aliyun.com/articles/92194?t=t1)
+* [《关于Hash Collision DoS漏洞：解析与解决方案》](http://www.iteye.com/news/23939/)
+
+### 脚本注入
+
+* [《上传文件漏洞原理及防范》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/641-web-an-quan-fang-fan/6414-shang-chuan-wen-jian-guo-lv.html)
+
+### 漏洞扫描工具
+* [《DVWA》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/6421-dvwa.html)
+* [W3af](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/w3af.html)
+* [OpenVAS详解](https://blog.csdn.net/xygg0801/article/details/53610640)
+
+### 验证码
+
+* [《验证码原理分析及实现》](https://blog.csdn.net/niaonao/article/details/51112686)
+
+* [《详解滑动验证码的实现原理》](https://my.oschina.net/jiangbianwanghai/blog/1031031)
+	* 滑动验证码是根据人在滑动滑块的响应时间，拖拽速度，时间，位置，轨迹，重试次数等来评估风险。
+
+* [《淘宝滑动验证码研究》](https://www.cnblogs.com/xcj26/p/5242758.html)
+
+## DDoS 防范
+* [《学习手册：DDoS的攻击方式及防御手段》](http://netsecurity.51cto.com/art/201601/503799.htm)
+* [《免费DDoS攻击测试工具大合集》](http://netsecurity.51cto.com/art/201406/442756.htm)
+
+## 用户隐私信息保护
+
+1. 用户密码非明文保存，加动态salt。
+2. 身份证号，手机号如果要显示，用 “\*” 替代部分字符。
+3. 联系方式在的显示与否由用户自己控制。
+4. TODO
+
+* [《个人隐私包括哪些》](https://zhidao.baidu.com/question/1988017976673661587.html)
+* [《在互联网上，隐私的范围包括哪些？》](https://www.zhihu.com/question/20137108)
+
+* [《用户密码保存》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/642-shu-ju-jia-mi/6425-jia-mi-chang-jing-ff1a-yong-hu-mi-ma-bao-cun.html)
+
+## 序列化漏洞
+* [《Lib之过？Java反序列化漏洞通用利用分析》](https://blog.chaitin.cn/2015-11-11_java_unserialize_rce/)
+
+## 加密解密
+
+### 对称加密
+
+* [《常见对称加密算法》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/642-shu-ju-jia-mi/6421-chang-jian-dui-cheng-jia-mi-suan-fa.html)
+	* DES、3DES、Blowfish、AES
+	* DES 采用 56位秘钥，Blowfish 采用1到448位变长秘钥，AES 128，192和256位长度的秘钥。
+	* DES 秘钥太短（只有56位）算法目前已经被 AES 取代，并且 AES 有硬件加速，性能很好。
+
+### 哈希算法
+* [《常用的哈希算法》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/642-shu-ju-jia-mi/6422-chang-jian-ha-xi-suan-fa-and-hmac.html)
+	* MD5 和 SHA-1 已经不再安全，已被弃用。
+	* 目前 SHA-256 是比较安全的。
+
+* [《基于Hash摘要签名的公网URL签名验证设计方案》](https://blog.csdn.net/zhangruhong168/article/details/78033202)
+
+### 非对称加密
+* [《常见非对称加密算法》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/642-shu-ju-jia-mi/6424-chang-yong-fei-dui-cheng-jia-mi-suan-fa.html)
+	* RSA、DSA、ECDSA(螺旋曲线加密算法)
+	* 和 RSA 不同的是 DSA 仅能用于数字签名，不能进行数据加密解密，其安全性和RSA相当，但其性能要比RSA快。
+	* 256位的ECC秘钥的安全性等同于3072位的RSA秘钥。
+
+		[《区块链的加密技术》](http://baijiahao.baidu.com/s?id=1578348858092033763&wfr=spider&for=pc)
+
+
+## 服务器安全
+* [《Linux强化论：15步打造一个安全的Linux服务器》](http://www.freebuf.com/articles/system/121540.html)
+
+## 数据安全
+
+### 数据备份
+
+TODO
+
+## 网络隔离
+
+### 内外网分离
+
+TODO
+
+### 登录跳板机
+在内外环境中通过跳板机登录到线上主机。
+* [《搭建简易堡垒机》](http://blog.51cto.com/zero01/2062618)
+
+## 授权、认证
+### RBAC
+* [《基于组织角色的权限设计》](https://www.cnblogs.com/zq8024/p/5003050.html)
+* [《权限系统与RBAC模型概述》](https://www.cnblogs.com/shijiaqi1066/p/3793894.html)
+* [《Spring整合Shiro做权限控制模块详细案例分析》](https://blog.csdn.net/he90227/article/details/38663553)
+
+### OAuth2.0
+* [《理解OAuth 2.0》](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
+* [《一张图搞定OAuth2.0》](https://www.cnblogs.com/flashsun/p/7424071.html)
+
+### 双因素认证（2FA）
+
+2FA - Two-factor authentication，用于加强登录验证
+
+常用做法是 登录密码 + 手机验证码（或者令牌Key，类似于与网银的 USB key）
+
+* 【《双因素认证（2FA）教程》】(http://www.ruanyifeng.com/blog/2017/11/2fa-tutorial.html)
+
+### 单点登录(SSO)
+
+* [《单点登录原理与简单实现》](https://www.cnblogs.com/ywlaker/p/6113927.html)
+
+* [CAS单点登录框架](https://github.com/apereo/cas)
+
+# 常用开源框架
+
+## 开源协议
+
+* [《开源协议的选择》](https://coderxing.gitbooks.io/architecture-evolution/chapter1/di-yi-zhang-ff1a-zhun-bei-qi-cheng/12-guan-yu-kai-yuan/123-kai-yuan-xie-yi-de-xuan-ze.html)
+
+* [如何选择一个开源软件协议](http://choosealicense.online/)
+
+## 日志框架
+
+### Log4j、Log4j2
+* [《log4j 详细讲解》](https://blog.csdn.net/u012422446/article/details/51199724)
+* [《log4j2 实际使用详解》](https://blog.csdn.net/vbirdbest/article/details/71751835)
+* [《Log4j1,Logback以及Log4j2性能测试对比》](https://my.oschina.net/OutOfMemory/blog/789267)
+	* Log4J 异步日志性能优异。
+
+### Logback
+* [《最全LogBack 详解、含java案例和配置说明》](https://blog.csdn.net/rulon147/article/details/52620541)
+
+## ORM
+
+* [《ORM框架使用优缺点》](https://blog.csdn.net/sinat_34093604/article/details/53082000)
+	* 主要目的是为了提高开发效率。
+
+**MyBatis：**
+
+* [《mybatis缓存机制详解》](https://www.cnblogs.com/winclpt/articles/7511672.html)
+	* 一级缓存是SqlSession级别的缓存，缓存的数据只在SqlSession内有效
+	* 二级缓存是mapper级别的缓存，同一个namespace公用这一个缓存，所以对SqlSession是共享的；使用 LRU 机制清理缓存，通过 cacheEnabled 参数开启。
+
+* [《MyBatis学习之代码生成器Generator》](https://blog.csdn.net/baidu_32877851/article/details/53959268)
+
+## 网络框架
+
+TODO
+
+## Web 框架
+
+### Spring 家族
+**Spring**
+* [Spring 简明教程](https://www.w3cschool.cn/wkspring/)
+
+**Spring Boot**
+* [官方网站](http://projects.spring.io/spring-boot/)
+* [《Spring Boot基础教程》](http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/)
+
+**Spring Cloud**
+
+* [Spring Boot 中文索引站](http://springboot.fun/)
+* [Spring Cloud 中文文档](https://springcloud.cc/)
+* [《Spring Cloud基础教程》](http://blog.didispace.com/Spring-Cloud%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/)
+
+## 工具框架
+
+* [《Apache Commons 工具类介绍及简单使用》](https://www.cnblogs.com/crazylqy/p/4872236.html)
+* [《Google guava 中文教程》](http://ifeve.com/google-guava/)
+
+
+# 分布式设计
+
+## 扩展性设计
+
+* [《架构师不可不知的十大可扩展架构》](https://blog.csdn.net/hemin1003/article/details/53633926)
+	* 总结下来，通用的套路就是分布、缓存及异步处理。
+
+* [《可扩展性设计之数据切分》](https://yq.aliyun.com/articles/38119)
+	* 水平切分+垂直切分
+	* 利用中间件进行分片如，MySQL Proxy。
+	* 利用分片策略进行切分，如按照ID取模。
+* [《说说如何实现可扩展性的大型网站架构》](https://blog.csdn.net/deniro_li/article/details/78458306)
+	* 分布式服务+消息队列。
+
+* [《大型网站技术架构（七）--网站的可扩展性架构》](https://blog.csdn.net/chaofanwei/article/details/29191073)
+
+## 稳定性 & 高可用
+
+* [《系统设计：关于高可用系统的一些技术方案》](https://blog.csdn.net/hustspy1990/article/details/78008324)
+	* 可扩展：水平扩展、垂直扩展。 通过冗余部署，避免单点故障。
+	* 隔离：避免单一业务占用全部资源。避免业务之间的相互影响 2. 机房隔离避免单点故障。
+	* 解耦：降低维护成本，降低耦合风险。减少依赖，减少相互间的影响。
+	* 限流：滑动窗口计数法、漏桶算法、令牌桶算法等算法。遇到突发流量时，保证系统稳定。
+	* 降级：紧急情况下释放非核心功能的资源。牺牲非核心业务，保证核心业务的高可用。
+	* 熔断：异常情况超出阈值进入熔断状态，快速失败。减少不稳定的外部依赖对核心服务的影响。
+	* 自动化测试：通过完善的测试，减少发布引起的故障。
+	* 灰度发布：灰度发布是速度与安全性作为妥协，能够有效减少发布故障。
+
+
+* [《关于高可用的系统》](https://coolshell.cn/articles/17459.html)
+	* 设计原则：数据不丢(持久化)；服务高可用(服务副本)；绝对的100%高可用很难，目标是做到尽可能多的9，如99.999%（全年累计只有5分钟）。
+
+### 硬件负载均衡
+
+* [《转！！负载均衡器技术Nginx和F5的优缺点对比》](https://www.cnblogs.com/wuyun-blog/p/6186198.html)
+	* 主要是和F5对比。
+
+* [《软/硬件负载均衡产品 你知多少？》](https://www.cnblogs.com/lcword/p/5773296.html)
+
+### 软件负载均衡
+
+* [《几种负载均衡算法》](https://www.cnblogs.com/tianzhiliang/articles/2317808.html)
+	轮寻、权重、负载、最少连接、QoS
+* [《DNS负载均衡》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/611-dns-fang-shi.html)
+	* 配置简单，更新速度慢。
+* [《Nginx负载均衡》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/613-nginx-fu-zai-jun-heng.html)
+	* 简单轻量、学习成本低；主要适用于web应用。
+
+*  [《借助LVS+Keepalived实现负载均衡 》](https://www.cnblogs.com/edisonchou/p/4281978.html)
+	* 配置比较负载、只支持到4层，性能较高。
+
+* [《HAProxy用法详解 全网最详细中文文档》](http://www.ttlsa.com/linux/haproxy-study-tutorial/)
+	* 支持到七层（比如HTTP）、功能比较全面，性能也不错。
+
+* [《Haproxy+Keepalived+MySQL实现读均衡负载》](http://blog.itpub.net/25704976/viewspace-1319781/)
+	* 主要是用户读请求的负载均衡。
+
+* [《rabbitmq+haproxy+keepalived实现高可用集群搭建》](https://www.cnblogs.com/lylife/p/5584019.html)
+
+### 限流
+
+* [《谈谈高并发系统的限流》](https://www.cnblogs.com/haoxinyue/p/6792309.html)
+	* 计数器：通过滑动窗口计数器，控制单位时间内的请求次数，简单粗暴。
+	* 漏桶算法：固定容量的漏桶，漏桶满了就丢弃请求，比较常用。
+	* 令牌桶算法：固定容量的令牌桶，按照一定速率添加令牌，处理请求前需要拿到令牌，拿不到令牌则丢弃请求，或进入丢队列，可以通过控制添加令牌的速率，来控制整体速度。Guava 中的 RateLimiter 是令牌桶的实现。
+	* Nginx 限流：通过 `limit_req` 等模块限制并发连接数。
+
+### 应用层容灾
+
+* [《防雪崩利器：熔断器 Hystrix 的原理与使用》](https://segmentfault.com/a/1190000005988895)
+	* 雪崩效应原因：硬件故障、硬件故障、程序Bug、重试加大流量、用户大量请求。
+	* 雪崩的对策：限流、改进缓存模式(缓存预加载、同步调用改异步)、自动扩容、降级。
+	* Hystrix设计原则：
+		* 资源隔离：Hystrix通过将每个依赖服务分配独立的线程池进行资源隔离, 从而避免服务雪崩。
+		* 熔断开关：服务的健康状况 = 请求失败数 / 请求总数，通过阈值设定和滑动窗口控制开关。
+		* 命令模式：通过继承 HystrixCommand 来包装服务调用逻辑。
+
+* [《缓存穿透，缓存击穿，缓存雪崩解决方案分析》](https://blog.csdn.net/zeb_perfect/article/details/54135506)
+* [《缓存击穿、失效以及热点key问题》](https://blog.csdn.net/zeb_perfect/article/details/54135506)
+	* 主要策略：失效瞬间：单机使用锁；使用分布式锁；不过期；
+	* 热点数据：热点数据单独存储；使用本地缓存；分成多个子key；
+
+### 跨机房容灾
+
+* [《“异地多活”多机房部署经验谈》](http://dc.idcquan.com/ywgl/71559.shtml)
+	* 通过自研中间件进行数据同步。
+
+* [《异地多活（异地双活）实践经验》](https://blog.csdn.net/jeffreynicole/article/details/48135093)
+	* 注意延迟问题，多次跨机房调用会将延时放大数倍。
+	* 建房间专线很大概率会出现问题，做好运维和程序层面的容错。
+	* 不能依赖于程序端数据双写，要有自动同步方案。
+	* 数据永不在高延迟和较差网络质量下，考虑同步质量问题。
+	* 核心业务和次要业务分而治之，甚至只考虑核心业务。
+	* 异地多活监控部署、测试也要跟上。
+	* 业务允许的情况下考虑用户分区，尤其是游戏、邮箱业务。
+	* 控制跨机房消息体大小，越小越好。
+	* 考虑使用docker容器虚拟化技术，提高动态调度能力。
+
+* [容灾技术及建设经验介绍](https://blog.csdn.net/yoara/article/details/38013751)
+
+
+### 容灾演练流程
+
+* [《依赖治理、灰度发布、故障演练，阿里电商故障演练系统的设计与实战经验》](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650996320&idx=1&sn=0ed3be190bbee4a9277886ef88cbb2e5)
+	* 常见故障画像
+	* 案例：预案有效性、预案有效性、故障复现、架构容灾测试、参数调优、参数调优、故障突袭、联合演练。
+
+### 平滑启动
+
+* 平滑重启应用思路
+1.端流量（如vip层）、2. flush 数据(如果有)、3, 重启应用
+
+* [《JVM安全退出（如何优雅的关闭java服务）》](https://blog.csdn.net/u011001084/article/details/73480432)
+推荐推出方式：System.exit，Kill SIGTERM；不推荐 kill-9；用 Runtime.addShutdownHook 注册钩子。
+* [《常见Java应用如何优雅关闭》](http://ju.outofmemory.cn/entry/337235)
+Java、Srping、Dubbo 优雅关闭方式。
+
+## 数据库扩展
+
+### 读写分离模式
+
+* [《Mysql主从方案的实现》](https://www.cnblogs.com/houdj/p/6563771.html)
+* [《搭建MySQL主从复制经典架构》](https://www.cnblogs.com/edisonchou/p/4133148.html)
+* [《Haproxy+多台MySQL从服务器(Slave) 实现负载均衡》](https://blog.csdn.net/nimasike/article/details/48048341)
+
+* [《DRBD+Heartbeat+Mysql高可用读写分离架构》](https://www.cnblogs.com/zhangsubai/p/6801764.html)
+	* DRDB 进行磁盘复制，避免单点问题。
+
+* [《MySQL Cluster 方式》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/62-ke-kuo-zhan-de-shu-ju-ku-jia-gou/621-gao-ke-yong-mysql-de-ji-zhong-fang-an/6214-mysql-cluster-fang-an.html)
+
+### 分片模式
+* [《分库分表需要考虑的问题及方案》](https://www.jianshu.com/p/32b3e91aa22c)
+	* 中间件： 轻量级：sharding-jdbc、TSharding；重量级：Atlas、MyCAT、Vitess等。
+	* 问题：事务、Join、迁移、扩容、ID、分页等。
+	* 事务补偿：对数据进行对帐检查;基于日志进行比对;定期同标准数据来源进行同步等。
+	* 分库策略：数值范围；取模；日期等。
+	* 分库数量：通常 MySQL 单库 5千万条、Oracle 单库一亿条需要分库。
+
+* [《MySql分表和表分区详解》](https://www.2cto.com/database/201503/380348.html)
+	* 分区：是MySQL内部机制，对客户端透明，数据存储在不同文件中，表面上看是同一个表。
+	* 分表：物理上创建不同的表、客户端需要管理分表路由。
+
+## 服务治理
+###  服务注册与发现
+
+* [《永不失联！如何实现微服务架构中的服务发现？》](https://blog.csdn.net/jiaolongdy/article/details/51188798)
+  * 客户端服务发现模式：客户端直接查询注册表，同时自己负责负载均衡。Eureka 采用这种方式。
+  * 服务器端服务发现模式：客户端通过负载均衡查询服务实例。
+* [《SpringCloud服务注册中心比较:Consul vs Zookeeper vs Etcd vs Eureka》](https://blog.csdn.net/u010963948/article/details/71730165)
+  * CAP支持：Consul（CA）、zookeeper（cp）、etcd（cp） 、euerka（ap）
+  * 作者认为目前 Consul 对 Spring cloud 的支持比较好。
+
+* [《基于Zookeeper的服务注册与发现》](http://mobile.51cto.com/news-502394.htm)
+	* 优点：API简单、Pinterest，Airbnb 在用、多语言、通过watcher机制来实现配置PUSH，能快速响应配置变化。
+
+### 服务路由控制
+* [《分布式服务框架学习笔记4 服务路由》](https://blog.csdn.net/xundh/article/details/59492750)
+	* 原则：透明化路由
+	* 负载均衡策略：随机、轮询、服务调用延迟、一致性哈希、粘滞连接
+	* 本地路由有限策略：injvm(优先调用jvm内部的服务)，innative(优先使用相同物理机的服务),原则上找距离最近的服务。
+	* 配置方式：统一注册表；本地配置；动态下发。
+
+## 分布式一致
+
+### CAP 与 BASE 理论
+
+* [《从分布式一致性谈到CAP理论、BASE理论》](http://www.cnblogs.com/szlbm/p/5588543.html)
+	* 一致性分类：强一致(立即一致)；弱一致(可在单位时间内实现一致，比如秒级)；最终一致(弱一致的一种，一定时间内最终一致)
+	* CAP：一致性、可用性、分区容错性(网络故障引起)
+	* BASE：Basically Available（基本可用）、Soft state（软状态）和Eventually consistent（最终一致性）
+	* BASE理论的核心思想是：即使无法做到强一致性，但每个应用都可以根据自身业务特点，采用适当的方式来使系统达到最终一致性。
+
+### 分布式锁
+
+* [《分布式锁的几种实现方式》](http://www.hollischuang.com/archives/1716)
+	* 基于数据库的分布式锁：优点：操作简单、容易理解。缺点：存在单点问题、数据库性能够开销较大、不可重入；
+	* 基于缓存的分布式锁：优点：非阻塞、性能好。缺点：操作不好容易造成锁无法释放的情况。
+	* Zookeeper 分布式锁：通过有序临时节点实现锁机制，自己对应的节点需要最小，则被认为是获得了锁。优点：集群可以透明解决单点问题，避免锁不被释放问题，同时锁可以重入。缺点：性能不如缓存方式，吞吐量会随着zk集群规模变大而下降。
+* [《基于Zookeeper的分布式锁》](https://www.tuicool.com/articles/VZJr6fY)
+	* 清楚的原理描述 + Java 代码示例。
+
+* [《jedisLock—redis分布式锁实现》](https://www.cnblogs.com/0201zcr/p/5942748.html)
+	* 基于 setnx(set if ont exists)，有则返回false，否则返回true。并支持过期时间。
+
+* [《Memcached 和 Redis 分布式锁方案》](https://blog.csdn.net/albertfly/article/details/77412333)
+	* 利用 memcached 的 add（有别于set）操作，当key存在时，返回false。
+
+### 分布式一致性算法
+
+#### PAXOS
+* [《分布式系列文章——Paxos算法原理与推导》](https://www.cnblogs.com/linbingdong/p/6253479.html)
+* [《Paxos-->Fast Paxos-->Zookeeper分析》](https://blog.csdn.net/u010039929/article/details/70171672)
+* [《【分布式】Zookeeper与Paxos》](https://www.cnblogs.com/leesf456/p/6012777.html)
+
+#### Zab
+* [《Zab：Zookeeper 中的分布式一致性协议介绍》](https://www.jianshu.com/p/fb527a64deee)
+
+#### Raft
+* [《Raft 为什么是更易理解的分布式一致性算法》](http://www.cnblogs.com/mindwind/p/5231986.html)
+	* 三种角色：Leader（领袖）、Follower（群众）、Candidate（候选人）
+	* 通过随机等待的方式发出投票，得票多的获胜。
+
+#### Gossip
+* [《Gossip算法》](http://blog.51cto.com/tianya23/530743)
+
+#### 两阶段提交、多阶段提交
+
+* [《关于分布式事务、两阶段提交协议、三阶提交协议》](http://blog.jobbole.com/95632/)
+
+### 幂等
+
+* [《分布式系统---幂等性设计》](https://www.cnblogs.com/wxgblogs/p/6639272.html)
+	* 幂等特性的作用：该资源具备幂等性，请求方无需担心重复调用会产生错误。
+	* 常见保证幂等的手段：MVCC（类似于乐观锁）、去重表(唯一索引)、悲观锁、一次性token、序列号方式。
+
+### 分布式一致方案
+* [《分布式系统事务一致性解决方案》](http://www.infoq.com/cn/articles/solution-of-distributed-system-transaction-consistency)
+* [《保证分布式系统数据一致性的6种方案》](https://weibo.com/ttarticle/p/show?id=2309403965965003062676)
+
+### 分布式 Leader 节点选举
+* [《利用zookeeper实现分布式leader节点选举》](https://blog.csdn.net/johnson_moon/article/details/78809995)
+
+### TCC(Try/Confirm/Cancel) 柔性事务
+* [《传统事务与柔性事务》](https://www.jianshu.com/p/ab1a1c6b08a1)
+	* 基于BASE理论：基本可用、柔性状态、最终一致。
+	* 解决方案：记录日志+补偿（正向补充或者回滚）、消息重试(要求程序要幂等)；“无锁设计”、采用乐观锁机制。
+
+## 分布式文件系统
+
+* [说说分布式文件存储系统-基本架构](https://zhuanlan.zhihu.com/p/27666295) ？
+* [《各种分布式文件系统的比较》](https://blog.csdn.net/gatieme/article/details/44982961) ？
+  * HDFS：大批量数据读写，用于高吞吐量的场景，不适合小文件。
+  * FastDFS：轻量级、适合小文件。
+
+## 唯一ID 生成
+
+### 全局唯一ID
+* [《高并发分布式系统中生成全局唯一Id汇总》](https://www.cnblogs.com/baiwa/p/5318432.html)
+	* Twitter 方案（Snowflake 算法）：41位时间戳+10位机器标识（比如IP，服务器名称等）+12位序列号(本地计数器)
+	* Flicker 方案：MySQL自增ID + "REPLACE INTO XXX:SELECT LAST_INSERT_ID();"
+	* UUID：缺点，无序，字符串过长，占用空间，影响检索性能。
+	* MongoDB 方案：利用 ObjectId。缺点：不能自增。
+
+* [《TDDL 在分布式下的SEQUENCE原理》](https://blog.csdn.net/hdu09075340/article/details/79103851)
+	* 在数据库中创建 sequence 表，用于记录，当前已被占用的id最大值。
+	* 每台客户端主机取一个id区间（比如 1000~2000）缓存在本地，并更新 sequence 表中的id最大值记录。
+	* 客户端主机之间取不同的id区间，用完再取，使用乐观锁机制控制并发。
+
+## 一致性Hash算法
+
+* [《一致性哈希算法》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/631-yi-zhi-xing-ha-xi.html)
+
+# 设计思想 & 开发模式
+
+## DDD(Domain-driven Design - 领域驱动设计)
+
+* [《浅谈我对DDD领域驱动设计的理解》](https://www.cnblogs.com/netfocus/p/5548025.html)
+  * 概念：DDD 主要对传统软件开发流程(分析-设计-编码)中各阶段的割裂问题而提出，避免由于一开始分析不明或在软件开发过程中的信息流转不一致而造成软件无法交付（和需求方设想不一致）的问题。DDD 强调一切以领域（Domain）为中心，强调领域专家（Domain Expert）的作用，强调先定义好领域模型之后在进行开发，并且领域模型可以指导开发（所谓的驱动）。
+  * 过程：理解领域、拆分领域、细化领域，模型的准确性取决于模型的理解深度。
+  * 设计：DDD 中提出了建模工具，比如聚合、实体、值对象、工厂、仓储、领域服务、领域事件来帮助领域建模。
+
+* [《领域驱动设计的基础知识总结》](https://www.cnblogs.com/butterfly100/p/7827870.html)
+  * 领域（Doamin）本质上就是问题域，比如一个电商系统，一个论坛系统等。
+  * 界限上下文（Bounded Context）：阐述子域之间的关系，可以简单理解成一个子系统或组件模块。
+  * 领域模型（Domain Model）：DDD的核心是建立（用通用描述语言、工具—领域通用语言）正确的领域模型；反应业务需求的本质，包括实体和过程；其贯穿软件分析、设计、开发 的整个过程；常用表达领域模型的方式：图、代码或文字；
+  * 领域通用语言：领域专家、开发设计人员都能立即的语言或工具。
+  * 经典分层架构：用户界面/展示层、应用层、领域层、基础设施层，是四层架构模式。
+  * 使用的模式：
+    * 关联尽量少，尽量单项，尽量降低整体复杂度。
+    * 实体（Entity）：领域中的唯一标示，一个实体的属性尽量少，少则清晰。
+    * 值对象（Value Object）：没有唯一标识，且属性值不可变，小二简单的对象，比如Date。
+    * 领域服务（Domain Service）： 协调多个领域对象，只有方法没有状态(不存数据)；可以分为应用层服务，领域层服务、基础层服务。
+    * 聚合及聚合根（Aggregate，Aggregate Root）：聚合定义了一组具有内聚关系的相关对象的集合；聚合根是对聚合引用的唯一元素；当修改一个聚合时，必须在事务级别；大部分领域模型中，有70%的聚合通常只有一个实体，30%只有2~3个实体；如果一个聚合只有一个实体，那么这个实体就是聚合根；如果有多个实体，那么我们可以思考聚合内哪个对象有独立存在的意义并且可以和外部直接进行交互；
+    * 工厂（Factory）：类似于设计模式中的工厂模式。
+    * 仓储（Repository）：持久化到DB，管理对象，且只对聚合设计仓储。
+
+* [《领域驱动设计(DDD)实现之路》](http://www.cnblogs.com/Leo_wl/p/3866629.html)
+	* 聚合：比如一辆汽车（Car）包含了引擎（Engine）、车轮（Wheel）和油箱（Tank）等组件，缺一不可。
+
+* [《领域驱动设计系列（2）浅析VO、DTO、DO、PO的概念、区别和用处》](http://www.hollischuang.com/archives/553)
+
+
+### 命令查询职责分离(CQRS)
+
+CQRS — Command Query Responsibility Seperation
+
+* [《领域驱动设计系列 (六)：CQRS》](https://www.cnblogs.com/cnblogsfans/p/4551990.html)
+	* 核心思想：读写分离（查询和更新在不同的方法中），不同的流程只是不同的设计方式，CQ代码分离，分布式环境中会有明显体现（有冗余数据的情况下），目的是为了高性能。
+
+* [《DDD CQRS架构和传统架构的优缺点比较》](http://www.techweb.com.cn/network/system/2017-07-07/2553563.shtml)
+	* 最终一致的设计理念；依赖于高可用消息中间件。
+
+* [《CQRS架构简介》](http://www.cnblogs.com/netfocus/p/4055346.html)
+	* 一个实现 CQRS 的抽象案例。
+
+* [《深度长文：我对CQRS/EventSourcing架构的思考》](http://www.uml.org.cn/zjjs/201609221.asp)
+	* CQRS 模式分析 + 12306 抢票案例
+
+### 贫血，充血模型
+
+* [《贫血，充血模型的解释以及一些经验》](https://kb.cnblogs.com/page/520743/)
+	* 失血模型：老子和儿子分别定义，相互不知道，二者实体定义中完全没有业务逻辑，通过外部Service进行关联。
+	* 贫血模型：老子知道儿子，儿子也知道老子；部分业务逻辑放到实体中；优点：各层单项依赖，结构清楚，易于维护；缺点：不符合OO思想，相比于充血模式，Service层较为厚重；
+	* 充血模型：和贫血模型类似，区别在于如何划分业务逻辑。优点：Service层比较薄，只充当Facade的角色，不和DAO打交道、复合OO思想；缺点：非单项依赖，DO和DAO之间双向依赖、和Service层的逻辑划分容易造成混乱。
+	* 肿胀模式：是一种极端情况，取消Service层、全部业务逻辑放在DO中；优点：符合OO思想、简化了分层；缺点：暴露信息过多、很多非DO逻辑也会强行并入DO。这种模式应该避免。
+	* 作者主张使用贫血模式。
+
+## Actor 模式
+
+TODO
+
+## 响应式编程
+
+### Reactor
+TODO
+### RxJava
+TODO
+### Vert.x
+TODO
+
+## DODAF2.0
+
+* [《DODAF2.0方法论》](http://www.360doc.com/content/16/0627/19/33945750_571201779.shtml)
+* [《DODAF2.0之能力视角如何落地》](http://blog.51cto.com/xiaoyong/1553164)
+
+## Serverless
+
+无需过多关系服务器的服务架构理念。
+
+* [《什么是Serverless无服务器架构？》](http://www.jdon.com/soa/serverless.html)
+	* Serverless 不代表出去服务器，而是去除对服务器运行状态的关心。
+	* Serverless 代表一思维方式的转变，从“构建一套服务在一台服务器上，对对个事件进行响应转变为构建一个为服务器，来响应一个事件”。
+	* Serverless 不代表某个具体的框架。
+
+* [《如何理解Serverless？》](http://www.infoq.com/cn/news/2017/10/how-to-understand-serverless)
+	* 依赖于 Baas （(Mobile) Backend as a Service） 和 Faas （Functions as a service）
+
+
+
+## Service Mesh
+
+* [《什么是Service Mesh？》](https://time.geekbang.org/article/2355)
+* [《初识 Service Mesh》](https://www.jianshu.com/p/e23e3e74538e)
+
+* [《什么是Service Mesh？》](https://time.geekbang.org/article/2355)
+
+# 项目管理
+
+## 架构评审
+* [《架构设计之如何评审架构设计说明书》](http://developer.51cto.com/art/201506/478486.htm)
+* [《人人都是架构师：非功能性需求》](https://blog.csdn.net/wireless_com/article/details/45935591)
+
+## 重构
+
+* [《架构之重构的12条军规》](http://www.infoq.com/cn/articles/architect-12-rules-complete/)
+
+## 代码规范
+
+TODO
+
+## 代码 Review
+
+
+制度还是制度!
+另外，每个公司需要根据自己的需求和目标制定自己的 check list
+
+* [《为什么你做不好 Code Review？》](http://www.sohu.com/a/229745352_181657)
+	* 代码 review 做的好，在于制度建设。
+
+* [《从零开始Code Review》](https://blog.csdn.net/uxyheaven/article/details/49773619)
+
+* [《Code Review Checklist》](https://www.cnblogs.com/zuoping/p/5477047.html)
+* [《Java Code Review Checklist》](https://dzone.com/articles/java-code-review-checklist)
+
+* [《如何用 gitlab 做 code review》](https://blog.csdn.net/legend0011/article/details/45585575)
+
+## RUP
+* [《运用RUP 4+1视图方法进行软件架构设计》](https://blog.csdn.net/apanious/article/details/51011946)
+
+## 看板管理
+* [《说说看板在项目中的应用》](https://blog.csdn.net/tkchen/article/details/51637643)
+
+## SCRUM
+
+SCRUM - 争球
+
+* 3个角色:Product Owner(PO) 产品负责人;Scrum Master（SM），推动Scrum执行;Team 开发团队。
+* 3个工件：Product Backlog 产品TODOLIST，含优先级;Sprint Backlog 功能开发 TODO LIST；燃尽图；
+* 五个价值观：专注、勇气、公开、承诺、尊重。
+
+
+* [《敏捷项目管理流程-Scrum框架最全总结！》](https://blog.csdn.net/inny100_100/article/details/54633757)
+
+* [《敏捷其实很简单3---敏捷方法之scrum》](https://blog.csdn.net/superkunkun/article/details/52951142)
+
+## 敏捷开发
+
+TODO
+
+## 极限编程（XP）
+
+XP - eXtreme Programming
+
+* [《主流敏捷开发方法：极限编程XP》](http://www.woshipm.com/pmd/406917.html)
+	* 是一种指导开发人员的方法论。
+	* 4大价值：
+		* 沟通：鼓励口头沟通，提高效率。
+		* 简单：够用就好。
+		* 反馈：及时反馈、通知相关人。
+		* 勇气：提倡拥抱变化，敢于重构。
+
+	* 5个原则：快速反馈、简单性假设、逐步修改、提倡更改（小步快跑）、优质工作（保证质量的前提下保证小步快跑）。
+	* 5个工作：阶段性冲刺；冲刺计划会议；每日站立会议；冲刺后review；回顾会议。
+
+## 结对编程
+
+边写码，边review。能够增强代码质量、减少bug。
+
+* [《结对编程》](http://www.baike.com/wiki/%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B)
+
+## PDCA 循环质量管理
+
+P——PLAN 策划，D——DO 实施，C——CHECK 检查，A——ACT 改进
+
+* [《PDCA》](http://www.baike.com/wiki/PDCA)
+
+## FMEA管理模式
+
+TODO
+
+# 通用业务术语
+
+TODO
+
+# 技术趋势
+
+TODO
+
+# 政策、法规
+
+TODO
+## 法律
+
+### 严格遵守刑法253法条
+
+我国刑法第253条之一规定：
+
+> * 国家机关或者金融、电信、交通、教育、医疗等单位的工作人员，违反国家规定，将本单位在履行职责或者提供服务过程中获得的公民个人信息，出售或者非法提供给他人，情节严重的，处3年以下有期徒刑或者拘役，并处或者单处罚金。
+> * 窃取或者以其他方法非法获取上述信息，情节严重的，依照前款的规定处罚。
+> * 单位犯前两款罪的，对单位判处罚金，并对其直接负责的主管人员和其他直接责任人员，依照各该款的规定处罚。
+
+最高人民法院、最高人民检察院关于执行《中华人民共和国刑法》确定罪名的补充规定（四）规定：触犯刑法第253条之一第1款之规定，构成“出售、非法提供公民个人信息罪”；触犯刑法第253条之一第2款之规定，构成“非法获取公民个人信息罪”
+
+* [《非法获取公民个人信息罪》](https://baike.baidu.com/item/%E9%9D%9E%E6%B3%95%E8%8E%B7%E5%8F%96%E5%85%AC%E6%B0%91%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E7%BD%AA)
+
+
+# 架构师素质
+
+* [《架构师画像》](http://hellojava.info/?p=430)
+	* 业务理解和抽象能力
+	* NB的代码能力
+	* 全面：1. 在面对业务问题上，架构师脑海里是否会浮现出多种技术方案；2. 在做系统设计时是否考虑到了足够多的方方面面；3. 在做系统设计时是否考虑到了足够多的方方面面；
+	* 全局：是否考虑到了对上下游的系统的影响。
+	* 权衡：权衡投入产出比；优先级和节奏控制；
+
+* [《关于架构优化和设计，架构师必须知道的事情》](http://www.infoq.com/cn/articles/architecture-optimization-and-design-the-architect-must-know)
+	* 要去考虑的细节：模块化、轻耦合、无共享架构；减少各个组件之前的依赖、注意服务之间依赖所有造成的链式失败及影响等。
+	* 基础设施、配置、测试、开发、运维综合考虑。
+	* 考虑人、团队、和组织的影响。
+
+* [《如何才能真正的提高自己，成为一名出色的架构师？》](https://www.zhihu.com/question/19841397)
+
+* [《架构师的必备素质和成长途径》](https://blog.csdn.net/sanbingyutuoniao123/article/details/54144129)
+	* 素质：业务理解、技术广度、技术深度、丰富经验、沟通能力、动手能力、美学素养。
+	* 成长路径：2年积累知识、4年积累技能和组内影响力、7年积累部门内影响力、7年以上积累跨部门影响力。
+
+* [《架构设计师—你在哪层楼？》](http://blog.51cto.com/frankfan/1248401)
+	* 第一层的架构师看到的只是产品本身
+	* 第二层的架构师不仅看到自己的产品，还看到了整体的方案
+	* 第三层的架构师看到的是商业价值
+
+# 团队管理
+
+TODO
+
+## 招聘
+
+# 资讯
+
+## 行业资讯
+
+* [36kr](http://36kr.com/)
+* [Techweb](http://www.techweb.com.cn/)
+
+## 公众号列表
+
+TODO
+
+## 博客
+
+### 团队博客
+* [阿里中间件博客](http://jm.taobao.org/)
+* [美团点评技术团队博客](https://tech.meituan.com)
+
+### 个人博客
+
+* [阮一峰的网络日志](http://www.ruanyifeng.com/)
+* [酷壳 - COOLSHELL-陈皓](https://coolshell.cn/)
+* [hellojava-阿里毕玄](http://hellojava.info/)
+* [Cm's Blog](http://cmsblogs.com/)
+* [程序猿DD-翟永超-《Spring Cloud微服务实战》作者](http://blog.didispace.com/)
+
+## 综合门户、社区
+
+**国内：**
+
+* [CSDN](http://csdn.net)
+	 老牌技术社区、不必解释。
+* [51cto.com](http://www.51cto.com/)
+* [ITeye](http://www.iteye.com/)
+	* 偏 Java 方向
+* [博客园](https://www.cnblogs.com)
+* [ChinaUnix](http://www.tom.net/)
+	* 偏 Linux 方向
+* [开源中国社区](https://www.oschina.net/)
+* [深度开源](http://www.open-open.com/)
+* [伯乐在线](http://www.jobbole.com/)
+	* 涵盖 IT职场、Web前端、后端、移动端、数据库等方面内容，偏技术端。
+
+* [ITPUB](http://www.itpub.net/)
+* [腾讯云— 云+社区](https://cloud.tencent.com/developer/column)
+* [阿里云— 云栖社区](https://yq.aliyun.com/)
+* [IBM DeveloperWorks](https://www.ibm.com/developerworks/cn/)
+* [开发者头条](https://toutiao.io/)
+* [LinkedKeeper](http://www.linkedkeeper.com)
+
+**国外：**
+
+* [DZone](https://dzone.com)
+* [Reddit](https://www.reddit.com)
+
+## 问答、讨论类社区
+
+* [segmentfault](https://segmentfault.com)
+	* 问答+专栏
+* [知乎](https://www.zhihu.com/)
+* [stackoverflow](https://stackoverflow.com/)
+
+## 行业数据分析
+
+* [艾瑞网](http://report.iresearch.cn/)
+* [QUEST MOBILE](https://www.questmobile.com.cn)
+
+* [国家数据](http://data.stats.gov.cn/)
+
+* [TalkingData](http://www.talkingdata.com/)
+
+## 专项网站
+
+* 测试:
+	* [领测国际](http://www.ltesting.net/)
+	* [测试窝](https://www.testwo.com/)
+	* [TesterHome](https://testerhome.com)
+
+* 运维:
+  	* [运维派](http://www.yunweipai.com/)
+  	* [Abcdocker](https://www.abcdocker.com/)
+
+* Java:
+	* [ImportNew](http://www.importnew.com/)
+		* 专注于 Java 技术分享
+	* [HowToDoInJava](https://howtodoinjava.com/)
+		* 英文博客
+
+* 安全
+	* [红黑联盟](https://www.2cto.com/)
+	* [FreeBuf](http://www.freebuf.com/)
+
+* 大数据
+	* [中国大数据](http://www.thebigdata.cn/)
+
+* 其他专题网站：
+	* [DockerInfo](http://www.dockerinfo.net/)
+		* 专注于 Docker 应用及咨询、教程的网站。
+	* [Linux公社](https://www.linuxidc.com/)
+		* Linux 主题社区
+
+## 其他类
+
+* [程序员技能图谱](https://github.com/TeamStuQ/skill-map)
+
+## 推荐参考书
+
+
+### 在线电子书
+
+* [《深入理解Spring Cloud与微服务构建》](https://github.com/forezp/SpringCloudLearning)
+
+
+* [《阿里技术参考图册-研发篇》](http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/1523849261680/AliTech101_RD.pdf)
+* [《阿里技术参考图册-算法篇》](http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/1523848064814/AliTech101_Algorithms.pdf)
+
+* [《2018美团点评技术年货（合辑）》70M](http://dpurl.cn/n/1lqcX)
+
+* [InfoQ《架构师》月刊](http://www.infoq.com/cn/architect/)
+
+* [《架构师之路》](https://www.w3cschool.cn/architectroad/)
+
+### 纸质书
+
+#### 开发方面
+
+* 《阿里巴巴Java开发手册》[京东](https://union-click.jd.com/jdc?d=bVKwZQ) [淘宝](https://s.taobao.com/search?q=阿里巴巴Java开发手册)
+
+#### 架构方面
+* 《软件架构师的12项修炼：技术技能篇》[京东](https://union-click.jd.com/jdc?d=gXvRd8) [淘宝](https://s.taobao.com/search?q=软件架构师的12项修炼：技术技能篇)
+* 《架构之美》[京东](https://union-click.jd.com/jdc?d=xJit5I) [淘宝](https://s.taobao.com/search?q=架构之美)
+* 《分布式服务架构》[京东](https://union-click.jd.com/jdc?d=JS5Od9) [淘宝](https://s.taobao.com/search?q=分布式服务架构)
+* 《聊聊架构》 [京东](https://union-click.jd.com/jdc?d=FHooH4) [淘宝](https://s.taobao.com/search?q=聊聊架构)
+* 《云原生应用架构实践》[京东](https://union-click.jd.com/jdc?d=orkJSj) [淘宝](https://s.taobao.com/search?q=云原生应用架构实践)
+* 《亿级流量网站架构核心技术》[京东](https://union-click.jd.com/jdc?d=RnOSP5) [淘宝](https://s.taobao.com/search?q=亿级流量网站架构核心技术)
+* 《淘宝技术这十年》[京东](https://union-click.jd.com/jdc?d=LwrDfD) [淘宝](https://s.taobao.com/search?q=淘宝技术这十年)
+* 《企业IT架构转型之道-中台战略思想与架构实战》 [京东](https://union-click.jd.com/jdc?d=89pAEm) [淘宝](https://s.taobao.com/search?q=企业IT架构转型之道)
+
+* 《高可用架构（第1卷）》[京东](https://item.jd.com/12195481.html) [淘宝](https://s.taobao.com/search?q=高可用架构)
+
+#### 技术管理方面
+* 《CTO说》[京东](https://union-click.jd.com/jdc?d=zhTZyr) [淘宝](https://s.taobao.com/search?q=CTO说)
+* 《技术管理之巅》[京东](https://union-click.jd.com/jdc?d=LgRBUW) [淘宝](https://s.taobao.com/search?q=技术管理之巅)
+* 《网易一千零一夜：互联网产品项目管理实战》[京东](https://union-click.jd.com/jdc?d=jcRz2r) [淘宝](https://s.taobao.com/search?q=网易一千零一夜：互联网产品项目管理实战)
+
+#### 基础理论
+* 《数学之美》[京东](https://union-click.jd.com/jdc?d=ghIES2) [淘宝](https://s.taobao.com/search?q=数学之美)
+* 《编程珠玑》[京东](https://union-click.jd.com/jdc?d=YmhdEu) [淘宝](https://s.taobao.com/search?q=编程珠玑)
+
+#### 工具方面
+TODO
+
+#### 大数据方面
+
+# 技术资源
+
+## 开源资源
+* [github](https://github.com)
+
+* [Apache 软件基金会](https://www.apache.org/index.html)
+
+## 手册、文档、教程
+
+**国内：**
+* [W3Cschool](http://w3cschool.cn)
+* [Runoob.com](http://www.runoob.com/)
+	* HTML 、 CSS、XML、Java、Python、PHP、设计模式等入门手册。
+
+* [Love2.io](https://love2.io/)
+	* 很多很多中文在线电子书，是一个全新的开源技术文档分享平台。
+* [gitbook.cn](http://gitbook.cn/)
+	* 付费电子书。
+* [ApacheCN](http://www.apachecn.org/)
+	* AI、大数据方面系列中文文档。
+
+**国外：**
+
+* [Quick Code](http://www.quickcode.co/)
+	* 免费在线技术教程。
+* [gitbook.com](http://gitbook.com)
+	* 有部分中文电子书。
+* [Cheatography](https://www.cheatography.com/)
+	* Cheat Sheets 大全，单页文档网站。
+* [Tutorialspoint](https://www.tutorialspoint.com/index.htm)
+	* 知名教程网站，提供Java、Python、JS、SQL、大数据等高质量入门教程。
+
+
+## 在线课堂
+
+* [学徒无忧](http://www.xuetuwuyou.com/)
+* [极客时间](https://time.geekbang.org/)
+* [segmentfault](https://segmentfault.com/lives)
+* [斯达克学院](https://new.stuq.org/course/explore)
+* [牛客网](http://nowcoder.com)
+* [极客学院](https://www.jikexueyuan.com/)
+* [51CTO学院](http://edu.51cto.com/)
+
+## 会议、活动
+
+* [QCon](http://www.infoq.com/cn/qcon/)
+* [ArchSummit](https://archsummit.com)
+* [GITC全球互联网技术大会](http://www.thegitc.com/)
+
+**活动发布平台:**
+* [活动行](http://www.huodongxing.com/)
+
+## 常用APP
+
+* [极客时间](https://time.geekbang.org)
+* [得到](https://www.igetget.com)
+
+## 找工作
+* [Boss直聘](https://www.zhipin.com)
+* [拉勾网](https://www.lagou.com)
+* [猎聘](https://www.liepin.com)
+* [100Offer](https://cn.100offer.com/)
+
+## 工具
+
+* [极客搜索](https://s.geekbang.org/)
+	* 技术文章搜索引擎。
+
+## 代码托管
+
+* [Coding](https://coding.net)
+* [码云](https://gitee.com/)
+
+## 文件服务
+* 七牛
+* 又拍云
+
+## 综合云服务商
+* 阿里云
+* [腾讯云](https://cloud.tencent.com/redirect.php?redirect=1012&cps_key=c2665015d90871c0cb20fef91b7afc3c)
+* 百度云
+* 新浪云
+* 金山云
+* [亚马逊云(AWS)](https://amazonaws-china.com/cn/)
+* [谷歌云](https://cloud.google.com/?hl=zh-cn)
+* [微软云](https://azure.microsoft.com/zh-cn/)
+
+### VPS
+* [Linode](http://linode.com)
+
+
+
