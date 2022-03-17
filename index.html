@@ -4,27 +4,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
+  <!-- 主题：白色-vue -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <!-- 主题：黑色 -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"> -->
 </head>
 <body>
   <nav>
-    <a href="#/">技术</a>
+    <!-- <a href="#/">技术</a>
     <a href="#/business/">业务</a>
     <a href="#/manage/">管理</a>
-    <a href="#/thinking/">思维</a>
+    <a href="#/thinking/">思维</a> -->
+    <a href="https://zhangling.site">去主站</a>
+    <a data-theme="vue">换肤</a>
   </nav>
   <div id="app"></div>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   <script>
     window.$docsify = {
+      basePath: '/docs/',
       loadNavbar: true,
       loadSidebar: true,
+      autoHeader: true,
       search: 'auto', // 默认值
       subMaxLevel: 2,
       plugins: [
         EditOnGithubPlugin.create(
-          'https://github.com/zhanglingme/note/edit/master/',
+          'https://github.com/lingxyz/learning/edit/master/',
           null,
           'edit on github'
         )
@@ -32,5 +39,20 @@
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script>
+    /**
+     * 换肤
+     */
+    const themes = ['vue', 'dark'];
+    document.querySelector('a[data-theme]').onclick = function(e) {
+      let activeTheme = e.target.attributes['data-theme'].nodeValue;
+      let nextThemeIndex = themes.length - 1 - themes.indexOf(activeTheme)
+      e.target.attributes['data-theme'].nodeValue = themes[nextThemeIndex];
+      let activeCssLinkArray = document.querySelector('link[rel]').attributes.href.value.split(activeTheme);
+      console.log(activeCssLinkArray)
+      let nextCssLink = activeCssLinkArray[0] + themes[nextThemeIndex] + activeCssLinkArray[1];
+      document.querySelector('link[rel]').attributes.href.value = nextCssLink;
+    };
+  </script>
 </body>
 </html>

@@ -1,8 +1,2 @@
 # mac dir
 .DS_Store
-
-# node packages
-node_modules
-
-# dist
-dist

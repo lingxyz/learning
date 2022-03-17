@@ -1,36 +1,19 @@
----
-sidebar: false
----
+# 🐳 Learning Tree· 技术学习清单
 
-# Zero's Blog
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zhanglingme/note/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/lingxyz/learning.svg?style=flat&label=Star)](https://github.com/zhanglingme/note/stargazers) [![GitHub forks](https://img.shields.io/github/forks/lingxyz/learning.svg?style=flat&label=Fork)](https://github.com/zhanglingme/note/fork) [![GitHub watchers](https://img.shields.io/github/watchers/lingxyz/learning.svg?style=flat&label=Watch)](https://github.com/zhanglingx/note/watchers)
 
-## JavaScript
+🎄 程序开发知识和技能树。边学习，边整理。持续学习，终身学习。
 
-* [徒手撸一个Ajax✍](javascript/徒手撸一个Ajax.md)
+<!-- 点此查看[文章分类](https://github.com/zhanglingx/note/labels)和[文章列表](https://github.com/zhanglingx/note/issues)。
 
-## Node.js
+_[@掘金](https://juejin.im/user/59e6e9acf265da43111f4c21/collections?type=created)同步更新。_ -->
 
-* [S3+Lambda实现图片压缩✍](nodejs/S3+Lambda实现图片压缩.md)
-* [使用Node.js制作命令行工具](nodejs/使用Node.js制作命令行工具.md)
+> 请我喝咖啡
 
-## 工程化 <a id="engineering"></a>
+<img src="../assets/alipay.jpg" alt="支付宝支付" width="200px"> <img src="../assets/wechatPay.jpg" alt="微信支付" width="200px">
 
-* [用Docker统一本地开发环境](engineering/用Docker统一本地开发环境.md)
-* [如何快速进行前后端分离?✍](engineering/前后端分离.md)
-* [系统解耦的几种方式✍](engineering/系统解耦.md)
-
-## 项目管理 <a id="pm"></a>
-
-* [从需求承接到代码交付程序员都经历了什么？✍](pm/从需求承接到交付流程.md)
-
-## 团队管理 <a id="tm"></a>
-
-* [构建游戏化组织](tm/构建游戏化组织.md)
-* [细节和格局的矛盾冲突✍](tm/细节和格局的矛盾冲突.md)
-
-## 其它 <a id="others"></a>
-
-* [思维与认知✍](others/思维与认知.md)
-* [持续自律，享受孤独✍](others/持续自律，享受孤独.md)
-* [那些如果中学就掌握的学习方法✍](others/学习方法总结.md)
-* [技术总监如何掌握所有技术细节？](others/技术总监如何掌握所有技术细节.md)
+- [ ] 个人笔记整理
+- [ ] 整合 https://github.com/lingxyz/TBOK.wiki
+- [ ] 整合 https://github.com/lingxyz/learning-note
+- [ ] 整合 有道云
+- [ ] 整合自己 docs -> vuepress
