@@ -44,15 +44,24 @@
      * 换肤
      */
     const themes = ['vue', 'dark'];
-    document.querySelector('a[data-theme]').onclick = function(e) {
-      let activeTheme = e.target.attributes['data-theme'].nodeValue;
-      let nextThemeIndex = themes.length - 1 - themes.indexOf(activeTheme)
-      e.target.attributes['data-theme'].nodeValue = themes[nextThemeIndex];
-      let activeCssLinkArray = document.querySelector('link[rel]').attributes.href.value.split(activeTheme);
-      console.log(activeCssLinkArray)
-      let nextCssLink = activeCssLinkArray[0] + themes[nextThemeIndex] + activeCssLinkArray[1];
-      document.querySelector('link[rel]').attributes.href.value = nextCssLink;
+    const $btn = document.querySelector('a[data-theme]');
+    const $link = document.querySelector('link[rel]')
+    let nextThemeLocal = localStorage.getItem("activeTheme");
+    if (nextThemeLocal != null && nextThemeLocal != "null") changeTheme(nextThemeLocal);
+
+    $btn.onclick = function(e) {
+      changeTheme();
     };
+
+    function changeTheme(nextThemeParam) {
+      let activeTheme = $btn.attributes['data-theme'].nodeValue;
+      let nextTheme = nextThemeParam || themes[themes.length - 1 - themes.indexOf(activeTheme)];
+      $btn.attributes['data-theme'].nodeValue = nextTheme;
+      localStorage.setItem("activeTheme", nextTheme);
+      let activeCssLinkArray = $link.attributes.href.value.split(activeTheme);
+      let nextCssLink = activeCssLinkArray[0] + nextTheme + activeCssLinkArray[1];
+      $link.attributes.href.value = nextCssLink;
+    }
   </script>
 </body>
 </html>
