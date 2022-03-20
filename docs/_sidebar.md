@@ -43,7 +43,7 @@
   * DevOps
 
 * 数据存储
-  * MySQL *
+  * [MySQL *](mysql.md)
   * Redis
 
 * 大数据
