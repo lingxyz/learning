@@ -5,7 +5,7 @@
 ？？？
 ```
 
-- [获取接口调用凭证 access_token。](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html)
+- [获取接口调用凭证 access_token](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html)
 ```
 请求地址：GET https://api.weixin.qq.com/cgi-bin/token
 入参：?grant_type=client_credential&appid=APPID&secret=APPSECRET
