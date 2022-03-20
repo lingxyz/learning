@@ -45,6 +45,8 @@
 * 数据存储
   * [MySQL *](mysql.md)
   * Redis
+  * ElasticSearch
+  * [ClickHouse](clickhouse.md)
 
 * 大数据
   * 数据采集
