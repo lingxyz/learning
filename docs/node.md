@@ -34,7 +34,7 @@ Node中大部分异步函数都为高阶函数。
 ```
   - [什么是I/O?常见I/O操作有哪些？](https://www.jianshu.com/p/fa7bdc4f3de7) `Node` `I/O`
 ```
-- I/O = Input / Output，也就是输入/输出  
+- I/O = Input / Output，也就是输入/输出
 - 常见I/O为网络I/O和本地磁盘I/O
 ```
 - 异步编程
