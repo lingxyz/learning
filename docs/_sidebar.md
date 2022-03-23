@@ -47,6 +47,7 @@
   * Redis
   * ElasticSearch
   * [MongoDB](mongodb.md)
+  * [Hbase](hbase.md)
   * [ClickHouse](clickhouse.md)
 
 * 大数据
