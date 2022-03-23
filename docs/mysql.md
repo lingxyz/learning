@@ -1,7 +1,8 @@
-* [MySQL](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#mysql)
-
-# 原理
-* [数据库](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据库)
+# 表设计
+* 引擎
+* 字符集
+* 字段
+* 范式和反范式
 * [数据库设计的三大范式](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据库设计的三大范式)
 * [《数据库的三大范式以及五大约束》](https://www.cnblogs.com/waj6511988/p/7027127.html)
 ```
@@ -9,6 +10,45 @@
 > 第二范式（2NF）：满足1NF后，要求表中的所有列，都必须依赖于主键，而不能有任何一列与主键没有关系，也就是说一个表只描述一件事情；
 > 第三范式：必须先满足第二范式（2NF），要求：表中的每一列只与主键直接相关而不是间接相关，（表中的每一列只能依赖于主键）；
 ```
+
+# CURD
+* [MySQL](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#mysql)
+* 索引操作，事物操作，存储过程操作，视图操作，log操作
+
+# SQL优化
+* 索引
+* 慢SQL排查，explain
+* 不走索引情况
+* 连表规则
+
+# 高并发优化
+* 死锁。事物互相等待。
+* 悲观锁(种类)
+* 乐观锁
+
+# 大数据优化
+* 分库分表
+* 分区
+
+# MySQL实现
+* 一条SQL从开始执行到结束经历了什么？
+* 优化器做了什么
+* 缓存区，同步规则？
+* 脏读幻读
+
+# 三方集成
+* Mybatis
+* TypeORM
+
+# 数据同步
+* 导入导出
+* 自动备份，恢复
+* binlog，redolog，。。
+
+----
+
+# 原理
+* [数据库](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据库)
 
 * [基础理论](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#基础理论)
 * [《MySQL的InnoDB索引原理详解》](http://www.admin10000.com/document/5372.html)
