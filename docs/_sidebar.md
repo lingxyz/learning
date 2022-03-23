@@ -58,9 +58,9 @@
 
 * 机器学习
   * Python
-  * Math
-  * Tensorflow
+  * NumPy
   * Pytorch
+  * [Tensorflow](tensorflow.md)
   * 图像识别
   * 语音识别
   * AI 中台

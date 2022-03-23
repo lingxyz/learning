@@ -1,4 +1,3 @@
-# MySQL
 * [MySQL](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#mysql)
 
 # 原理

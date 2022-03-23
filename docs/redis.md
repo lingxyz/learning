@@ -1,4 +1,4 @@
-* 《Redis 教程》](http://www.runoob.com/redis/redis-tutorial.html)
+* [《Redis 教程》](http://www.runoob.com/redis/redis-tutorial.html)
 
 * [《redis底层原理》](https://blog.csdn.net/wcf373722432/article/details/78678504)
 	* 使用 ziplist 存储链表，ziplist是一种压缩链表，它的好处是更能节省内存空间，因为它所存储的内容都是在连续的内存区域当中的。
