@@ -1,4 +1,4 @@
-- 《Redis 教程》](http://www.runoob.com/redis/redis-tutorial.html)
+* 《Redis 教程》](http://www.runoob.com/redis/redis-tutorial.html)
 
 * [《redis底层原理》](https://blog.csdn.net/wcf373722432/article/details/78678504)
 	* 使用 ziplist 存储链表，ziplist是一种压缩链表，它的好处是更能节省内存空间，因为它所存储的内容都是在连续的内存区域当中的。
@@ -10,13 +10,13 @@
 
 * [《分布式缓存--序列3--原子操作与CAS乐观锁》](https://blog.csdn.net/chunlongyu/article/details/53346436)
 
-#### 架构
+# 架构
 * [《Redis单线程架构》](https://blog.csdn.net/sunhuiliang85/article/details/73656830)
 
-#### 回收策略
+# 回收策略
 * [《redis的回收策略》](https://blog.csdn.net/qq_29108585/article/details/63251491)
 
-### Tair
+# Tair
 
 * [官方网站](https://github.com/alibaba/tair)
 * [《Tair和Redis的对比》](http://blog.csdn.net/farphone/article/details/53522383)

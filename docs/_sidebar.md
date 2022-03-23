@@ -44,7 +44,7 @@
 
 * 数据存储
   * [MySQL *](mysql.md)
-  * Redis
+  * [Redis](redis.md)
   * ElasticSearch
   * [MongoDB](mongodb.md)
   * [Hbase](hbase.md)
