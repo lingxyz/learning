@@ -14,6 +14,18 @@
 # CURD
 * [MySQL](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#mysql)
 * 索引操作，事物操作，存储过程操作，视图操作，log操作
+* [group by 两个字段](https://www.cnblogs.com/happyWolf666/p/8196147.html)
+```
+> group by 一般和聚合函数一起使用才有意义，比如 count sum avg等
+> 筛选结果：where(约束声明，返回结果前生效) → group by → having(过滤声明，返回结果后生效)
+> 通过两个字段分组：group by b,c 。先按条件b分组，再按条件c将b分好的组再拆分子组。
+```
+
+* [MySQL语句的执行语句的书写顺序与执行顺序](https://blog.csdn.net/weixin_39562364/article/details/106683657)
+```
+> 书写顺序：select (输出)   from （获取数据）  where（过滤）  group by （分组） having（过滤） order by （排序）   limit（限定）
+> 执行顺序：先from，在执行where，group by ，select， having，order by ，limit
+```
 
 # SQL优化
 * 索引
