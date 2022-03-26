@@ -7,3 +7,6 @@
 [大前端综合教程、资源汇总](https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/front-end-tutorial.md)
 
 [jsfont](https://github.com/jsfront/src/blob/master/qq.md)
+
+- [null和undefined区别](https://note.youdao.com/s/d3voXpnk)
+- [jQuery('#id')与document.getElementById('id')之间如何转换？](https://note.youdao.com/s/VmeQfD1x)

@@ -10,7 +10,7 @@
 * Web前端
   * HTML
   * [CSS](css.md)
-  * JavaScript
+  * [JavaScript](javascript.md)
   * TypeScript
   * [Vue](vue.md)
   * React
