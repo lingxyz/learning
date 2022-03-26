@@ -14,6 +14,7 @@
   * TypeScript
   * [Vue](vue.md)
   * React
+  * [qiankun](qiankun.md)
   * Webpack
   * Vite
 
