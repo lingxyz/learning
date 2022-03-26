@@ -4,7 +4,7 @@
   * [网络](network.md)
   * [数据结构](data-structure.md)
   * [算法](algorithm.md)
-  * 设计模式
+  * [设计模式](design-pattern.md)
   * 架构原则
 
 * Web前端
