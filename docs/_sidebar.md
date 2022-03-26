@@ -1,11 +1,53 @@
-* 基础
-  * 系统结构
-  * [操作系统](operating-system.md)
-  * [网络](network.md)
-  * [数据结构](data-structure.md)
-  * [算法](algorithm.md)
-  * [设计模式](design-pattern.md)
-  * 架构原则
+* 数据存储
+  * [mq](mq.md)
+  * [MySQL *](mysql.md)
+  * [Redis](redis.md)
+  * ElasticSearch
+  * [MongoDB](mongodb.md)
+  * [Hbase](hbase.md)
+  * [ClickHouse](clickhouse.md)
+  * [云原生](aws.md)
+
+* 后端应用
+  * [Java *](java.md)
+  * Spring
+  * [Node.js](node.md)
+  * [Nest.js](nest.md)
+  * [Golang](golang.md)
+  * Gin
+  * [DevOps](devops.md)
+
+* 高并发
+  * 队列
+  * 锁
+
+* 分布式
+  * 分布式锁
+  * 分布式事务
+  * 分布式消息
+  * 分布式缓存
+  * 分布式Job
+
+* 微服务
+  * 网关
+  * 注册中心
+  * 消息总线
+  * 链路追踪
+
+* 大数据
+  * 数据采集
+  * 数据分析
+  * 流式计算
+  * 数据存储
+
+* 机器学习
+  * Python
+  * NumPy
+  * Pytorch
+  * [Tensorflow](tensorflow.md)
+  * 图像识别
+  * 语音识别
+  * AI 中台
 
 * Web前端
   * [HTML](html.md)
@@ -31,37 +73,11 @@
   * [Flutter](flutter.md)
   * Electron
 
-* 后端
-  * [Java *](java.md)
-  * Spring
-  * [Node.js](node.md)
-  * [Nest.js](nest.md)
-  * [Golang](golang.md)
-  * Gin
-  * 微服务
-  * 高并发
-  * 分布式
-  * [DevOps](devops.md)
-
-* 数据存储
-  * [MySQL *](mysql.md)
-  * [Redis](redis.md)
-  * ElasticSearch
-  * [MongoDB](mongodb.md)
-  * [Hbase](hbase.md)
-  * [ClickHouse](clickhouse.md)
-
-* 大数据
-  * 数据采集
-  * 数据分析
-  * 流式计算
-  * 数据存储
-
-* 机器学习
-  * Python
-  * NumPy
-  * Pytorch
-  * [Tensorflow](tensorflow.md)
-  * 图像识别
-  * 语音识别
-  * AI 中台
+* 核心基础
+  * 系统结构
+  * [操作系统](operating-system.md)
+  * [网络](network.md)
+  * [数据结构](data-structure.md)
+  * [算法](algorithm.md)
+  * [设计模式](design-pattern.md)
+  * 架构原则
