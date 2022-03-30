@@ -35,6 +35,25 @@
 
 # 高并发优化
 * 死锁。事物互相等待。
+* 死锁产生的原因
+* [MySQL死锁排查](https://blog.csdn.net/weixin_28725037/article/details/113121231)
+```sql
+# 1：查看当前的事务
+SELECT * FROM INFORMATION_SCHEMA.INNODB_TRX;
+# 2：查看当前锁定的事务
+SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCKS;
+# 3：查看当前等锁的事务
+SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCK_WAITS;
+```
+
+* MySQL死锁解决
+```markdown
+明确：死锁只能被减少，不能被避免。
+限流：网关限流、接口限流。
+释放：MySQL锁自动释放。
+优化：代码优化。分析事务代码，避免死锁产生。
+```
+
 * 悲观锁(种类)
 * 乐观锁
 

@@ -17,10 +17,8 @@
   * Gin
   * [DevOps](devops.md)
 
-* 高并发
-  * 队列
-  * 锁
-
+* [高并发](high-concurrency.md)
+  
 * 分布式
   * 分布式锁
   * 分布式事务
