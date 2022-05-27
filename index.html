@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
   <!-- 主题：白色-vue -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <link rel="stylesheet" href="https://unpkg.com/docsify/themes/vue.css">
   <!-- 主题：黑色 -->
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/docsify/themes/dark.css"> -->
 </head>
 <body>
   <nav>
@@ -19,8 +19,8 @@
     <a data-theme="vue">换肤</a>
   </nav>
   <div id="app"></div>
-  <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.12.2/docsify.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+  <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="https://unpkg.com/docsify-edit-on-github/index.js"></script>
   <script>
     window.$docsify = {
       basePath: '/docs/',
@@ -38,11 +38,21 @@
       ]
     }
   </script>
-  <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.12.2/plugins/search.min.js"></script>
+  <!--全文搜索-->
+  <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <!--Java代码高亮-->
+  <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-python.js"></script>
+  <!-- 复制到剪贴板 -->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <!-- emoji -->
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+  <!-- 图片缩放 -->
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 换肤 -->
   <script>
-    /**
-     * 换肤
-     */
     const themes = ['vue', 'dark'];
     const $btn = document.querySelector('a[data-theme]');
     const $link = document.querySelector('link[rel]')
