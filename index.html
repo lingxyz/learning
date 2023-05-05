@@ -11,15 +11,16 @@
 </head>
 <body>
   <nav>
-    <!-- <a href="#/">技术</a>
-    <a href="#/business/">业务</a>
-    <a href="#/manage/">管理</a>
-    <a href="#/thinking/">思维</a> -->
-    <a href="https://zhangling.site">去主站</a>
-    <a data-theme="vue">换肤</a>
+    <a href="#/fe/">Web</a>
+    <a href="#/be/">Java</a>
+    <a href="#/data/">Data</a>
+    <a href="#/ai/">AI</a>
+    <a href="https://zhangling.site">🏠</a>
+    <a data-theme="vue">🧩</a>
   </nav>
   <div id="app"></div>
   <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="https://unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
   <script src="https://unpkg.com/docsify-edit-on-github/index.js"></script>
   <script>
     window.$docsify = {
@@ -28,7 +29,7 @@
       loadSidebar: true,
       autoHeader: true,
       search: 'auto', // 默认值
-      subMaxLevel: 2,
+      subMaxLevel: 0,
       plugins: [
         EditOnGithubPlugin.create(
           'https://github.com/lingxyz/learning/edit/master/docs/',
