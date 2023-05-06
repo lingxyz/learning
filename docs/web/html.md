@@ -1,10 +1,13 @@
 - 什么是 Doctype？有几种模式？ `HTML` `Doctype`
+
 ```
 - 标准模式：严格型（strict 4.0 strict 1.0 !Doctype html）
 - 准标准模式：过度型(Transitional 4.0 Transitional 1.0)
 - 框架集型(Frameset 4.0 Frameset 1.0)
 ```
+
 - JS 延迟加载和异步加载的区别？ `HTML` `资源加载`
+
 ```js
 // 延迟到文档完全加载或解析后执行脚本
 <script src="" defer="defer"></script>
@@ -21,6 +24,7 @@ H5 规范要求按照顺序执行，并且先于`DOMContentLoaded`（HTML等文�
 确保不会修改DOM。
 异步脚本一定会在 load 事件前执行，但是可能会在DOMContentLoaded 事件触发之前或之后执行。
 ```
+
 - HTML `模板` ☆
 - Pug `模板` `预编译器` ☆
 

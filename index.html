@@ -8,16 +8,49 @@
   <link rel="stylesheet" href="https://unpkg.com/docsify/themes/vue.css">
   <!-- 主题：黑色 -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/docsify/themes/dark.css"> -->
+  <!-- 自定义颜色 -->
+  <style>
+    /* 切换主题按钮 */
+    .app-nav>ul>li:last-child {
+      position: fixed;
+      bottom: 10px;
+      right: 5px;
+    }
+    /* sidebar */
+    li>.app-sub-sidebar {
+      position: fixed;
+      top: 200px;
+      right: 1%;
+      width: 14%;
+      min-width: 100px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      max-height: 60%;
+      background: #e9f0b45c;
+      border-radius: 4px;
+      padding-left: 10px !important;
+    }
+    li>.app-sub-sidebar li::before {
+      content: '·';
+      font-weight: bold;
+    }
+    section.content {
+      right: 8%;
+    }
+    /* editor on github */
+    .markdown-section>div[style="overflow: auto"]{
+      position: absolute;
+      left: 138px;
+      top: 63px;
+    }
+    /* 字数、阅读时间 */
+    .markdown-section>div[style="margin-bottom: 10px;"]>span{
+      float: left !important;
+    }
+
+  </style>
 </head>
 <body>
-  <nav>
-    <a href="#/fe/">Web</a>
-    <a href="#/be/">Java</a>
-    <a href="#/data/">Data</a>
-    <a href="#/ai/">AI</a>
-    <a href="https://zhangling.site">🏠</a>
-    <a data-theme="vue">🧩</a>
-  </nav>
   <div id="app"></div>
   <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
@@ -25,16 +58,18 @@
   <script>
     window.$docsify = {
       basePath: '/docs/',
+      // 入口文件
+      homepage: 'home.md',
       loadNavbar: true,
       loadSidebar: true,
       autoHeader: true,
       search: 'auto', // 默认值
-      subMaxLevel: 0,
+      subMaxLevel: 2,
       plugins: [
         EditOnGithubPlugin.create(
           'https://github.com/lingxyz/learning/edit/master/docs/',
           null,
-          'edit on github'
+          '✍🏻'
         )
       ]
     }
@@ -54,6 +89,7 @@
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <!-- 换肤 -->
   <script>
+  setTimeout(() => {
     const themes = ['vue', 'dark'];
     const $btn = document.querySelector('a[data-theme]');
     const $link = document.querySelector('link[rel]')
@@ -73,6 +109,7 @@
       let nextCssLink = activeCssLinkArray[0] + nextTheme + activeCssLinkArray[1];
       $link.attributes.href.value = nextCssLink;
     }
+  }, 3000)
   </script>
 </body>
 </html>
