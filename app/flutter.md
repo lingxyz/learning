@@ -10,10 +10,15 @@
   - Dart `语言` ☆☆
   - Flutter `框架` ☆☆
   - Android Studio `IDE` ☆
+    - [Android Studio 使用教程](https://developer.android.com/studio/intro/)
+    -  [安卓开发教程](https://developer.android.com/guide/)
+
+
 
 - Weex `框架` `hybird` ☆☆☆
 - React `框架` ☆☆
 - React Native `框架` `hybird` ☆☆☆
+- [Cordova 中文文档](http://cordova.axuer.com/docs/zh-cn/latest/)
 - [Electron](https://electronjs.org/docs) | [electron-vue](https://simulatedgreg.gitbooks.io/electron-vue/cn/) `desktop`
 - Flutter + Dart
 - 快应用

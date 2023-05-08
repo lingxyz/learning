@@ -5,13 +5,13 @@
 🎄 程序开发知识和技能树。
 
 - * 🌳 技术
-  * [Web✨](docs/web/README.md)
-  * [Wechat](docs/wechat/README.md)
-  * [App](docs/app/README.md)
-  * [Java✨](docs/java/README.md)
-  * [Data](docs/data/README.md)
-  * [AI](docs/ai/README.md)
-  * [Basics](docs/basics/README.md)
+  * [Web✨](web/README.md)
+  * [Wechat](wechat/README.md)
+  * [App](app/README.md)
+  * [Java✨](java/README.md)
+  * [Data](data/README.md)
+  * [AI](ai/README.md)
+  * [Basics](basics/README.md)
 * 🦠 管理
   * 团队管理
   * 技术管理

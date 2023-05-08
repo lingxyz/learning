@@ -42,13 +42,44 @@
     .markdown-section>div[style="overflow: auto"]{
       position: absolute;
       left: 138px;
+      top: 6px;
+    }
+    .markdown-section>h1+div[style="overflow: auto"]{
       top: 63px;
     }
     /* 字数、阅读时间 */
     .markdown-section>div[style="margin-bottom: 10px;"]>span{
       float: left !important;
     }
-
+    /* 标题大小 */
+    .markdown-section h2:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0;
+      border-bottom: 1px solid #f1f1f1;
+    }
+    .markdown-section h3 {
+      font-size: 1.3rem;
+      margin: 25px 0 0.6rem;
+    }
+    .markdown-section h4 {
+      font-size: 1.1rem;
+    }
+    .markdown-section h5 {
+      font-size: 0.9rem;
+    }
+    .markdown-section h6 {
+      font-size: 0.75rem;
+    }
+    /* 代码格式 */
+    .markdown-section pre {
+      padding: 0 .4rem;
+      margin: .2em 0;
+    }
+    .markdown-section pre > code {
+      padding: 1em 6px;
+    }
   </style>
 </head>
 <body>
@@ -58,7 +89,7 @@
   <script src="https://unpkg.com/docsify-edit-on-github/index.js"></script>
   <script>
     window.$docsify = {
-      basePath: '/docs/',
+      basePath: '/',
       // 入口文件
       // homepage: 'home.md',
       loadNavbar: true,
@@ -67,10 +98,10 @@
       onlyCover: true, // 封面作为首页
       autoHeader: true,
       search: 'auto', // 默认值
-      subMaxLevel: 2,
+      subMaxLevel: 3,
       plugins: [
         EditOnGithubPlugin.create(
-          'https://gitee.com/-/ide/project/lingxyz/learning/edit/master/-/docs/',
+          'https://gitee.com/-/ide/project/lingxyz/learning/edit/master/-/',
           null,
           '✍🏻'
         )
@@ -102,7 +133,7 @@
     $btn.onclick = function(e) {
       changeTheme();
     };
-
+    /* 切换主题 */
     function changeTheme(nextThemeParam) {
       let activeTheme = $btn.attributes['data-theme'].nodeValue;
       let nextTheme = nextThemeParam || themes[themes.length - 1 - themes.indexOf(activeTheme)];

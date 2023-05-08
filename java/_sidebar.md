@@ -8,20 +8,24 @@
   * [Golang](java/golang.md)
   * Gin
   * [DevOps](java/devops.md)
+
 * [高并发](java/high-concurrency.md)
+
 * 分布式
   * 分布式锁
   * 分布式事务
   * 分布式消息
   * 分布式缓存
   * 分布式Job
+
 * 微服务
   * 网关
   * 注册中心
   * 消息总线
   * 链路追踪
+
 * 数据存储
-  * [mq](java/mq.md)
+  * [MQ](java/mq.md)
   * [MySQL *](java/mysql.md)
   * [Redis](java/redis.md)
   * ElasticSearch

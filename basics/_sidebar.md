@@ -1,7 +1,7 @@
 <!-- _sidebar.md -->
 
 * 计算机基础
-  * 系统结构
+  * [系统结构](basics/system-structure.md)
   * [操作系统](basics/operating-system.md)
   * [网络](basics/network.md)
 * 编程基础

@@ -1,10 +1,10 @@
 - `计算机原理` [《操作系统基础知识——操作系统的原理，类型和结构》](https://segmentfault.com/a/1190000003692840)
 - `视屏` [操作系统原理](http://www.icourses.cn/sCourse/course_3743.html)
 - `类型和结构` [《操作系统基础知识——操作系统的原理，类型和结构》](https://segmentfault.com/a/1190000003692840)
-- `CPU` [怎样理解理解CPU缓存和伪共享？](docs/operatingSystem/怎样理解理解CPU缓存和伪共享？.md)
+- `CPU` [怎样理解理解CPU缓存和伪共享？](draft/operatingSystem/怎样理解理解CPU缓存和伪共享？.md)
 - `进程`
 - `线程` [《线程的生命周期及状态转换详解》](https://blog.csdn.net/asdf_1024/article/details/78978437)
-- `协程` [从yield到actor模型的实现](docs/operatingSystem/从yield到actor模型的实现.md)
+- `协程` [从yield到actor模型的实现](draft/operatingSystem/从yield到actor模型的实现.md)
 - `Linux` [《Linux 命令大全》](http://www.runoob.com/linux/linux-command-manual.html)
 - `shell`
 - [《终结python协程----从yield到actor模型的实现》](https://www.thinksaas.cn/group/topic/839375/)

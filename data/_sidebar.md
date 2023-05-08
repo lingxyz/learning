@@ -3,9 +3,12 @@
 * 数据存储
   * [Hbase](data/hbase.md)
   * [ClickHouse](data/clickhouse.md)
+  * Kafka
 
-* 大数据
-  * 数据采集
-  * 数据分析
-  * 流式计算
-  * 数据存储
+* 数据计算
+  * [Flink](/flink)
+  * [Spark](/spark)
+
+* 数据分析
+
+* 数据采集
