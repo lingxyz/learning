@@ -1,3 +1,35 @@
+# SQL优化
+
+## 索引
+
+### explain排查慢SQL
+
+all range const index ... 说明
+
+### 不走索引情况
+
+#### 范围查询走索引吗？
+
+不一定。
+
+正常情况下，MySQL在进行范围查询（比如>、< 、>=、<=、in等条件）时，会走索引。
+
+当 MySQL 发现全表扫描比走索引效率更高，因此就`放弃了走索引`。引起`索引失效`。
+
+也就是说，当Mysql发现通过索引扫描的行记录数超过全表的`10%-30%`时，优化器可能会放弃走索引，自动变成全表扫描。某些场景下即便强制SQL语句走索引，也同样会失效。
+
+```sql
+# type = all, 不走索引
+explain select count(1) from xxx where data > '20220122';
+# type = range, 走索引
+explain select * from xxx where data > '20220122';
+```
+
+所以，如果你在项目中采用了上述方式的查询，又希望它能够走索引，通常需要添加一些其他的限制条件或用其他方式来保证索引的有效性。
+
+### 连表规则
+
+
 # 表设计
 * 引擎
 * 字符集
@@ -26,12 +58,6 @@
 > 书写顺序：select (输出)   from （获取数据）  where（过滤）  group by （分组） having（过滤） order by （排序）   limit（限定）
 > 执行顺序：先from，在执行where，group by ，select， having，order by ，limit
 ```
-
-# SQL优化
-* 索引
-* 慢SQL排查，explain
-* 不走索引情况
-* 连表规则
 
 # 高并发优化
 * 死锁。事物互相等待。
