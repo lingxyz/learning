@@ -55,7 +55,7 @@ rollup main.js --file bundle.js --format umd --name "myBundle"
 
 # Tree-Shaking 优化
 
-通过`依赖分析`，将实际`未使用的代码剔除`。粒度到`函数`级别。
+通过`依赖分析`，Rollup 将实际`未使用的代码剔除`。粒度到`函数`级别。
 
 > `Tree-Shaking` 也叫`live code inclusion`，是一种消除无效代码的方式。根据项目依赖抽离模块内容的 `AST抽象语法树`，然后 `摇动语法树` 以删除所有无效代码，过程类似于 `标记-清除垃圾收集算法`。
 
