@@ -104,7 +104,52 @@
           'https://gitee.com/-/ide/project/lingxyz/learning/edit/master/-/',
           null,
           '✍🏻'
-        )
+        ),
+        /* 编辑插件 */
+        function(hook, vm) {
+          var contents = ''
+          const editableDiv = document.createElement('div');
+          // 每次开始解析 Markdown 内容时调用
+          hook.beforeEach(function(content) {
+            contents = content
+            console.log(content)
+            return content;
+          });
+          hook.doneEach(function() {
+            editableDiv.innerHTML = contents
+          })
+          //  初始化并第一次加载完成数据后调用，没有参数。
+          hook.ready(function() {
+            // 创建元素
+            const div = document.createElement('div');
+            div.style.display = 'none';
+            editableDiv.contentEditable = true;
+            editableDiv.style.whiteSpace = 'pre-wrap';
+            // editableDiv.innerHTML = contents
+            div.appendChild(editableDiv);
+            const button = document.createElement('button');
+            button.innerHTML = '修改'
+            div.appendChild(button);
+            // 将div元素插入到x元素的最后面
+            const sectionContent = document.querySelector('section.content');
+            sectionContent.appendChild(div);
+            // 创建编辑按钮
+            const editorButton = document.createElement('button');
+            editorButton.innerHTML = '编辑'
+            const markdownSection = document.querySelector('.markdown-section');
+            editorButton.addEventListener('click', () => {
+              div.style.display = 'block'
+              editorButton.style.display = 'none'
+              markdownSection.style.display = 'none'
+            });
+            button.addEventListener('click', () => {
+              div.style.display = 'none'
+              editorButton.style.display = 'block'
+              markdownSection.style.display = 'block'
+            });
+            sectionContent.insertBefore(editorButton, sectionContent.firstChild);
+          });
+        }
       ]
     }
   </script>

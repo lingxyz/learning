@@ -31,5 +31,5 @@
   * SSG
 
 * **监控**
-  * [Sentry](sentry.md)
+  * [Sentry](web/sentry.md)
   * 埋点
