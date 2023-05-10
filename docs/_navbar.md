@@ -1,6 +1,6 @@
 <!-- _navbar.md -->
 
-* 🌳 技术
+* 🌳 技术架构
   * [Web✨](web/README.md)
   * [Wechat](wechat/README.md)
   * [App](app/README.md)
@@ -8,17 +8,17 @@
   * [Data](data/README.md)
   * [AI](ai/README.md)
   * [Basics](basics/README.md)
-* 🦠 管理
-  * [团队管理]()
+* 🦠 研发管理
   * [技术管理]()
+  * [团队管理]()
   * [项目管理]()
   * [向上管理]()
-* 🍄 产品
-  * [数字化])
+* 🍄 产品运营
+  * [数字化]()
   * [新零售]()
   * [互联网+]()
   * [技术工具]()
-* 🌻 概念
+* 🌻 思维认知
   * [阅读](read/lean-ux.md)
   * [商业]()
   * [管理]()
