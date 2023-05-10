@@ -20,20 +20,36 @@
     /* sidebar */
     li>.app-sub-sidebar {
       position: fixed;
-      top: 200px;
-      right: 1%;
+      top: 120px;
+      right: 0;
       width: 14%;
       min-width: 100px;
       overflow-x: hidden;
       overflow-y: scroll;
-      max-height: 60%;
-      background: #e9f0b45c;
-      border-radius: 4px;
-      padding-left: 10px !important;
+      max-height: 80%;
+      /* background: #e9f0b45c; */
+      /* border-radius: 4px; */
+      padding: 0 2px 0 20px !important;
+      border-left: 1px solid #e8ebee;
     }
     li>.app-sub-sidebar li::before {
-      content: '·';
+      content: '';
+    }
+    li>.app-sub-sidebar li.active::before {
+      content: '';
+      width: 0;
+      height: 1.25rem;
+      border-left: 2px solid #42b983;
+      position: absolute;
+      left: 0;
+      transform: translateY(5px);
+    }
+    li>.app-sub-sidebar li a:hover {
+      text-decoration: none;
       font-weight: bold;
+    }
+    li>.app-sub-sidebar li.active > a {
+      border-right: none;
     }
     section.content {
       right: 8%;
@@ -113,6 +129,8 @@
           hook.beforeEach(function(content) {
             contents = content
             console.log(content)
+            /* 黄色高亮：==字符串== */
+            content = content.replace(/==(.+?)==/g, '<span style="background: #eeff00;">$1</span>')
             return content;
           });
           hook.doneEach(function() {
@@ -147,7 +165,7 @@
               editorButton.style.display = 'block'
               markdownSection.style.display = 'block'
             });
-            sectionContent.insertBefore(editorButton, sectionContent.firstChild);
+            // sectionContent.insertBefore(editorButton, sectionContent.firstChild);
           });
         }
       ]
