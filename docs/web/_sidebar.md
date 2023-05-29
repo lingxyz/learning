@@ -23,7 +23,7 @@
   * [qiankun](web/qiankun.md)
 
 * **低代码**
-  * [Amis](web/amis.md)
+  * [Amis](https://zhangling.site/books/amis/)
 
 * **部署**
   * SPA/BSR/CSR
